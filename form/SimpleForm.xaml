@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage 
+  xmlns="http://xamarin.com/schemas/2014/forms"
+  xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+  xmlns:ns="clr-namespace:NeuroSpeech.UIAtoms.Controls;assembly=NeuroSpeech.UIAtoms"
+  x:Class="Form.SimpleForm">
+  <ns:AtomForm>
+    
+    <!-- Displays Header -->
+    <ns:AtomFieldGroup 
+      Category="Login">
+
+      <!--  Display Label  -->
+      <Entry 
+        ns:AtomForm.Label="First Name:"/>
+
+      <!--  Display red asterix   -->
+      <Entry
+        ns:AtomForm.Label="Last Name:"
+        ns:AtomForm.IsRequired="true"
+        />
+
+
+      <!--  Display description at bottom  -->
+      <Entry
+        ns:AtomForm.Label="Company Name:"
+        ns:AtomField.Description="Enter your current or last employment"
+        />
+      
+      
+    </ns:AtomFieldGroup>
+  </ns:AtomForm>
+</ContentPage>
