@@ -7,3 +7,7 @@ Line of business samples with UI Atoms for Xamarin.Forms
 3. Validations
 4. AtomGridView
 5. AtomToggleButtonBar
+
+NuGet
+
+    Install-Package UIAtoms.Xamarin.Forms
