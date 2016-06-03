@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:UIAtomsDemo.Controls"
+             Title="Menu"
+             x:Class="UIAtomsDemo.Views.MenuPage">
+  <local:MenuList>
+    <local:MenuList.ItemTemplate>
+      <DataTemplate>
+        <TextCell
+          Text="{Binding Label}"
+          Detail="{Binding Description}"
+          />
+      </DataTemplate>
+    </local:MenuList.ItemTemplate>
+  </local:MenuList>
+</ContentPage>

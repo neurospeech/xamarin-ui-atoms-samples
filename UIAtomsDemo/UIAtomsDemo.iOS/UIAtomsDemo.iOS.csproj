@@ -116,8 +116,8 @@
     <InterfaceDefinition Include="Resources\LaunchScreen.storyboard" />
   </ItemGroup>
   <ItemGroup>
-    <Reference Include="NeuroSpeech.UIAtoms, Version=1.0.189.27449, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\UIAtoms.Xamarin.Forms.1.0.189\lib\Xamarin.iOS10\NeuroSpeech.UIAtoms.dll</HintPath>
+    <Reference Include="NeuroSpeech.UIAtoms, Version=1.0.192.24102, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\UIAtoms.Xamarin.Forms.1.0.192\lib\Xamarin.iOS10\NeuroSpeech.UIAtoms.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Newtonsoft.Json, Version=8.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
@@ -125,6 +125,7 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.Net.Http" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
     <Reference Include="Xamarin.Forms.Core, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
@@ -146,6 +147,10 @@
     <Reference Include="Xamarin.iOS" />
   </ItemGroup>
   <Import Project="..\UIAtomsDemo\UIAtomsDemo.projitems" Label="Shared" Condition="Exists('..\UIAtomsDemo\UIAtomsDemo.projitems')" />
+  <Import Project="..\..\ComboBox\ComboBox.projitems" Label="Shared" />
+  <Import Project="..\..\Form\Form.projitems" Label="Shared" />
+  <Import Project="..\..\GridView\GridView.projitems" Label="Shared" />
+  <Import Project="..\..\ToggleButtonBar\ToggleButtonBar.projitems" Label="Shared" />
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <Import Project="..\..\packages\Xamarin.Forms.2.2.0.45\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.targets" Condition="Exists('..\..\packages\Xamarin.Forms.2.2.0.45\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

@@ -54,8 +54,8 @@
     </Reference>
     <Reference Include="Mono.Android" />
     <Reference Include="mscorlib" />
-    <Reference Include="NeuroSpeech.UIAtoms, Version=1.0.189.27446, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\UIAtoms.Xamarin.Forms.1.0.189\lib\MonoAndroid10\NeuroSpeech.UIAtoms.dll</HintPath>
+    <Reference Include="NeuroSpeech.UIAtoms, Version=1.0.192.24102, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\UIAtoms.Xamarin.Forms.1.0.192\lib\MonoAndroid10\NeuroSpeech.UIAtoms.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Newtonsoft.Json, Version=8.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">

@@ -19,13 +19,17 @@ Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "ToggleButtonBar", "ToggleBu
 EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
-		Form\Form.projitems*{6e90f7f6-60cd-4112-bcc6-87d6a6e5d8a0}*SharedItemsImports = 4
 		UIAtomsDemo\UIAtomsDemo\UIAtomsDemo.projitems*{6e90f7f6-60cd-4112-bcc6-87d6a6e5d8a0}*SharedItemsImports = 4
-		GridView\GridView.projitems*{6e90f7f6-60cd-4112-bcc6-87d6a6e5d8a0}*SharedItemsImports = 4
+		Form\Form.projitems*{6e90f7f6-60cd-4112-bcc6-87d6a6e5d8a0}*SharedItemsImports = 4
 		ToggleButtonBar\ToggleButtonBar.projitems*{6e90f7f6-60cd-4112-bcc6-87d6a6e5d8a0}*SharedItemsImports = 4
 		ComboBox\ComboBox.projitems*{6e90f7f6-60cd-4112-bcc6-87d6a6e5d8a0}*SharedItemsImports = 4
+		GridView\GridView.projitems*{6e90f7f6-60cd-4112-bcc6-87d6a6e5d8a0}*SharedItemsImports = 4
 		Form\Form.projitems*{08d8e865-ee8c-49a0-bd6c-3faa8154bf9d}*SharedItemsImports = 13
 		UIAtomsDemo\UIAtomsDemo\UIAtomsDemo.projitems*{159e377e-e906-49b5-96c4-e4c425fb828e}*SharedItemsImports = 4
+		Form\Form.projitems*{159e377e-e906-49b5-96c4-e4c425fb828e}*SharedItemsImports = 4
+		ToggleButtonBar\ToggleButtonBar.projitems*{159e377e-e906-49b5-96c4-e4c425fb828e}*SharedItemsImports = 4
+		ComboBox\ComboBox.projitems*{159e377e-e906-49b5-96c4-e4c425fb828e}*SharedItemsImports = 4
+		GridView\GridView.projitems*{159e377e-e906-49b5-96c4-e4c425fb828e}*SharedItemsImports = 4
 		ComboBox\ComboBox.projitems*{0b1a7d6f-144e-4ee9-84a6-5b199feb9dc3}*SharedItemsImports = 13
 		ToggleButtonBar\ToggleButtonBar.projitems*{344f2617-a430-4784-a3dd-d908d63e9e30}*SharedItemsImports = 13
 		UIAtomsDemo\UIAtomsDemo\UIAtomsDemo.projitems*{d136d210-8d15-4352-a368-212286511121}*SharedItemsImports = 13
