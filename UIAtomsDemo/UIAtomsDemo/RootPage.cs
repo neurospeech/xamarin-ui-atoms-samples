@@ -20,7 +20,18 @@ namespace UIAtomsDemo
             var menuService = DependencyService.Get<MenuService>();
 
             Detail = menuService.Menus.First().Page;
+
+            menuService.MenuClicked += MenuService_MenuClicked;
+
+            
         }
 
+        private void MenuService_MenuClicked(object sender, EventArgs e)
+        {
+            if (Device.Idiom != TargetIdiom.Tablet)
+            {
+                IsPresented = false;
+            }
+        }
     }
 }

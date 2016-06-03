@@ -23,6 +23,7 @@ namespace UIAtomsDemo.Services
             }
         }
 
+        public event EventHandler MenuClicked;
         
         public MenuItem Add(string label, Action action, string category = null, string description = null, string icon = null)
         {
@@ -63,16 +64,20 @@ namespace UIAtomsDemo.Services
                 }
 
                 AtomViewModel avm = np.BindingContext as AtomViewModel;
-                Device.BeginInvokeOnMainThread(async () =>
+                if (avm != null)
                 {
-                    try
+                    Device.BeginInvokeOnMainThread(async () =>
                     {
-                        await avm.InitAsync();
-                    }
-                    catch (Exception ex) {
-                        System.Diagnostics.Debug.WriteLine(ex);
-                    }
-                });
+                        try
+                        {
+                            await avm.InitAsync();
+                        }
+                        catch (Exception ex)
+                        {
+                            System.Diagnostics.Debug.WriteLine(ex);
+                        }
+                    });
+                }
 
             };
             _menus.Add(mi);
@@ -84,6 +89,10 @@ namespace UIAtomsDemo.Services
             return b;
         }
 
+        internal void InvokeClick(MenuItem menuItem)
+        {
+            MenuClicked?.Invoke(this, EventArgs.Empty);
+        }
     }
 
 
@@ -207,6 +216,12 @@ namespace UIAtomsDemo.Services
             }
         }
         #endregion
+
+        public void Click() {
+            var menuService = DependencyService.Get<MenuService>();
+            Action();
+            menuService.InvokeClick(this);
+        }
 
         private Page _page;
         public Page Page {

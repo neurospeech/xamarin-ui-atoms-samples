@@ -21,10 +21,7 @@ namespace UIAtomsDemo.Controls
 
             var menuService = DependencyService.Get<MenuService>();
 
-            this.SetBinding(MenuList.MenuItemsProperty, new Binding("Menus") {
-                Source = menuService
-            });
-
+            this.SetBinding(MenuItemsProperty, new Binding("Menus") { Source = menuService });
         }
 
         private void MenuList_ItemSelected(object sender, SelectedItemChangedEventArgs e)
@@ -32,7 +29,7 @@ namespace UIAtomsDemo.Controls
             if (e.SelectedItem == null)
                 return;
             Services.MenuItem mi = e.SelectedItem as Services.MenuItem;
-            mi?.Action();
+            mi?.Click();
             SelectedItem = null;
         }
 
@@ -81,29 +78,34 @@ namespace UIAtomsDemo.Controls
             if (ince != null) {
                 ince.CollectionChanged += Ince_CollectionChanged;
             }
+
+            Ince_CollectionChanged(null, null);
         }
 
 
         long collectionChangedLock = 0;
         private void Ince_CollectionChanged(object sender, NotifyCollectionChangedEventArgs e)
         {
-            UIAtomsApplication.Instance.Trigger(ref collectionChangedLock, UpdateCollection);
+            if (MenuItems != null)
+            {
+                UIAtomsApplication.Instance.Trigger(ref collectionChangedLock, UpdateCollection);
+            }
         }
 
         private void UpdateCollection() {
             var cats = MenuItems.GroupBy(x => x.Category).ToList();
-            if (cats.Count() == 1) {
+            if (cats.Count() == 1)
+            {
                 if (string.IsNullOrWhiteSpace(cats.First().Key))
                 {
                     this.IsGroupingEnabled = false;
                     this.ItemsSource = MenuItems;
-                }
-                else {
-                    this.IsGroupingEnabled = true;
-                    this.GroupDisplayBinding = new Binding("Key");
-                    this.ItemsSource = cats;
+                    return;
                 }
             }
+            this.IsGroupingEnabled = true;
+            this.GroupDisplayBinding = new Binding("Key");
+            this.ItemsSource = cats;
         }
 
 
