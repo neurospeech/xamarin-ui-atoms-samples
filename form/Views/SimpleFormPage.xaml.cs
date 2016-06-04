@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 using Xamarin.Forms;
 
-namespace Form
+namespace Form.Views
 {
-	public partial class SimpleValidation : ContentPage
+	public partial class SimpleFormPage : ContentPage
 	{
-		public SimpleValidation ()
+		public SimpleFormPage ()
 		{
 			InitializeComponent ();
 		}

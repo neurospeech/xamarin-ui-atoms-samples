@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 using Xamarin.Forms;
 
-namespace Form
+namespace ComboBox.Views
 {
-	public partial class SimpleForm : ContentPage
+	public partial class SimpleComboBoxPage : ContentPage
 	{
-		public SimpleForm ()
+		public SimpleComboBoxPage ()
 		{
 			InitializeComponent ();
 		}

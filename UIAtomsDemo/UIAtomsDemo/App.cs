@@ -1,4 +1,6 @@
-﻿using Form;
+﻿using ComboBox.Views;
+using Form;
+using Form.Views;
 using NeuroSpeech.UIAtoms;
 using System;
 using System.Collections.Generic;
@@ -40,9 +42,12 @@ namespace UIAtomsDemo
 
             var menuService = DependencyService.Get<MenuService>();
 
-            menuService.Add<Home>("Home","Home");
-            menuService.Add<SimpleForm>("Simple Form","Form");
-            menuService.Add<SimpleValidation>("Simple Validation", "Form");
+            menuService.Add<HomePage>("Home","Home");
+
+            menuService.Add<SimpleFormPage>("Simple Form","Form");
+            menuService.Add<SimpleValidationPage>("Simple Validation", "Form");
+
+            menuService.Add<SimpleComboBoxPage>("Simple ComboBox", "ComboBox");
 
 
             try

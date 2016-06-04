@@ -219,8 +219,15 @@ namespace UIAtomsDemo.Services
 
         public void Click() {
             var menuService = DependencyService.Get<MenuService>();
-            Action();
-            menuService.InvokeClick(this);
+            try
+            {
+                Action();
+                menuService.InvokeClick(this);
+            }
+            catch (Exception ex) {
+                System.Diagnostics.Debug.WriteLine(ex);
+                DependencyService.Get<INotificationService>().Notify(ex.Message);
+            }
         }
 
         private Page _page;

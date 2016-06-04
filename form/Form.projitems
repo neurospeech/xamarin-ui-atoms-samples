@@ -9,25 +9,25 @@
     <Import_RootNamespace>Form</Import_RootNamespace>
   </PropertyGroup>
   <ItemGroup>
-    <EmbeddedResource Include="$(MSBuildThisFileDirectory)SimpleForm.xaml">
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\SimpleFormPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\SimpleValidationPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="$(MSBuildThisFileDirectory)SimpleForm.xaml.cs">
-      <DependentUpon>SimpleForm.xaml</DependentUpon>
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\SimpleFormViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\SimpleValidationViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Views\SimpleFormPage.xaml.cs">
       <SubType>Code</SubType>
+      <DependentUpon>SimpleFormPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="$(MSBuildThisFileDirectory)SimpleValidation.xaml.cs">
-      <DependentUpon>SimpleValidation.xaml</DependentUpon>
+    <Compile Include="$(MSBuildThisFileDirectory)Views\SimpleValidationPage.xaml.cs">
       <SubType>Code</SubType>
+      <DependentUpon>SimpleValidationPage.xaml</DependentUpon>
     </Compile>
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="$(MSBuildThisFileDirectory)SimpleValidation.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-    </EmbeddedResource>
   </ItemGroup>
 </Project>
