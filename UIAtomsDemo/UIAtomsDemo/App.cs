@@ -6,6 +6,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using UIAtomsDemo.RestServices.Mock;
 using UIAtomsDemo.Services;
 using UIAtomsDemo.Views;
 using Xamarin.Forms;
@@ -17,6 +18,10 @@ namespace UIAtomsDemo
 		public App ()
         {
             // The root page of your application
+
+
+            // setup mock...
+            MockApp.Init();
 
             MainPage = new ContentPage
             {

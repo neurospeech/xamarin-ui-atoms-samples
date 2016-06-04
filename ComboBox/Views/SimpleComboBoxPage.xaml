@@ -9,8 +9,13 @@
       <ns:AtomComboBox
         ns:AtomForm.Label="Country:"
         ItemsSource="{Binding CountryList}"
-        SelectedItem="{Binding SelectedCountry}"
-        />
+        >
+        <ns:AtomComboBox.ItemTemplate>
+          <DataTemplate>
+            <TextCell Text="{Binding CountryName}" />
+          </DataTemplate>
+        </ns:AtomComboBox.ItemTemplate>
+      </ns:AtomComboBox>
     </ns:AtomFieldGroup>
   </ns:AtomForm>
   
