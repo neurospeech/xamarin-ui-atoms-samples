@@ -18,6 +18,7 @@ namespace ComboBox.ViewModels
         public override async Task InitAsync()
         {
             var countryList = await Get<ConfigService>().GetCountriesAsync();
+            CountryList.Clear();
             CountryList.AddRange(countryList);
         }
 

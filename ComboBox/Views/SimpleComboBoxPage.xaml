@@ -8,11 +8,13 @@
     <ns:AtomFieldGroup>
       <ns:AtomComboBox
         ns:AtomForm.Label="Country:"
-        ItemsSource="{Binding CountryList}"
-        >
+        ItemsSource="{Binding CountryList}">
         <ns:AtomComboBox.ItemTemplate>
           <DataTemplate>
-            <TextCell Text="{Binding CountryName}" />
+            
+            <!-- Data Template is derived from View and not Cell -->
+            
+            <Label Text="{Binding CountryName}" />
           </DataTemplate>
         </ns:AtomComboBox.ItemTemplate>
       </ns:AtomComboBox>
