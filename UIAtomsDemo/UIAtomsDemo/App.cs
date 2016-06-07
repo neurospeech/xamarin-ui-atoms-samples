@@ -52,6 +52,8 @@ namespace UIAtomsDemo
             menuService.Add<SimpleFormPage>("Simple Form","Form");
             menuService.Add<SimpleValidationPage>("Simple Validation", "Form");
 
+            menuService.Add<SimpleValidationPage>("Confirm Button", "Button");
+
             menuService.Add<SimpleComboBoxPage>("Simple ComboBox", "ComboBox");
 
 

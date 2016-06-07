@@ -19,13 +19,18 @@ Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "UIAtomsDemo.RestServices", 
 EndProject
 Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "UIAtomsDemo.RestServices.Mock", "UIAtomsDemo.RestServices.Mock\UIAtomsDemo.RestServices.Mock.shproj", "{5AED3EB6-7E29-4308-9D68-6117E771EAE5}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{183D58AC-CFE1-47A6-8C9A-1429170B5EEC}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
 		UIAtomsDemo.RestServices.Mock\UIAtomsDemo.RestServices.Mock.projitems*{6e90f7f6-60cd-4112-bcc6-87d6a6e5d8a0}*SharedItemsImports = 4
+		UIAtomsDemo.RestServices\UIAtomsDemo.RestServices.projitems*{6e90f7f6-60cd-4112-bcc6-87d6a6e5d8a0}*SharedItemsImports = 4
 		ToggleButtonBar\ToggleButtonBar.projitems*{6e90f7f6-60cd-4112-bcc6-87d6a6e5d8a0}*SharedItemsImports = 4
 		Form\Form.projitems*{6e90f7f6-60cd-4112-bcc6-87d6a6e5d8a0}*SharedItemsImports = 4
 		GridView\GridView.projitems*{6e90f7f6-60cd-4112-bcc6-87d6a6e5d8a0}*SharedItemsImports = 4
-		UIAtomsDemo.RestServices\UIAtomsDemo.RestServices.projitems*{6e90f7f6-60cd-4112-bcc6-87d6a6e5d8a0}*SharedItemsImports = 4
 		ComboBox\ComboBox.projitems*{6e90f7f6-60cd-4112-bcc6-87d6a6e5d8a0}*SharedItemsImports = 4
 		UIAtomsDemo\UIAtomsDemo\UIAtomsDemo.projitems*{6e90f7f6-60cd-4112-bcc6-87d6a6e5d8a0}*SharedItemsImports = 4
 		Form\Form.projitems*{08d8e865-ee8c-49a0-bd6c-3faa8154bf9d}*SharedItemsImports = 13
