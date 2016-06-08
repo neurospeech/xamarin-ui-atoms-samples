@@ -2,9 +2,9 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:ns="clr-namespace:NeuroSpeech.UIAtoms.Controls;assembly=NeuroSpeech.UIAtoms"
-             x:Class="UIAtomsDemo.Views.ConfirmButtonPage">
+             x:Class="ConfirmButton.Views.ConfirmButtonPage">
   <Grid>
-    <ns:AtomButton 
+    <ns:AtomButton
       Confirm="True"
       Command="{Binding DeleteCommand}"
       ConfirmMessage="Are you sure you want to delete this?"

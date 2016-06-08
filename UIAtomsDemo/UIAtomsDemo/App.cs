@@ -1,4 +1,5 @@
 ﻿using ComboBox.Views;
+using ConfirmButton.Views;
 using Form;
 using Form.Views;
 using NeuroSpeech.UIAtoms;
@@ -52,9 +53,10 @@ namespace UIAtomsDemo
             menuService.Add<SimpleFormPage>("Simple Form","Form");
             menuService.Add<SimpleValidationPage>("Simple Validation", "Form");
 
-            menuService.Add<SimpleValidationPage>("Confirm Button", "Button");
+            menuService.Add<ConfirmButtonPage>("Confirm Button", "Button");
 
             menuService.Add<SimpleComboBoxPage>("Simple ComboBox", "ComboBox");
+            menuService.Add<ComboBoxPropertyFilterPage>("Property Filter", "ComboBox");
 
 
             try

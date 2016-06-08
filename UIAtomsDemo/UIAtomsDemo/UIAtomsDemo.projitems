@@ -14,10 +14,6 @@
     <Compile Include="$(MSBuildThisFileDirectory)RootPage.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Services\MenuList.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Services\MenuService.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\ConfirmButtonPageViewModel.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Views\ConfirmButtonPage.xaml.cs">
-      <SubType>Code</SubType>
-    </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)Views\HomePage.xaml.cs">
       <DependentUpon>HomePage.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -40,8 +36,6 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\ConfirmButtonPage.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-    </EmbeddedResource>
+    <Folder Include="$(MSBuildThisFileDirectory)ViewModels\" />
   </ItemGroup>
 </Project>

@@ -17,12 +17,23 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\ComboBoxPropertyFilterPageViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModels\SimpleComboBoxPageViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Views\ComboBoxPropertyFilterPage.xaml.cs">
+      <DependentUpon>ComboBoxPropertyFilterPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)Views\SimpleComboBoxPage.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="$(MSBuildThisFileDirectory)README.md" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\ComboBoxPropertyFilterPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
   </ItemGroup>
 </Project>

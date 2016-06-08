@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:ns="clr-namespace:NeuroSpeech.UIAtoms.Controls;assembly=NeuroSpeech.UIAtoms"
+             x:Class="ComboBox.Views.ComboBoxPropertyFilterPage">
+  <ns:AtomForm>
+    <ns:AtomFieldGroup Category="Employee">
+
+      <!-- Search Employee list by firstname and lastname -->
+      
+      <ns:AtomComboBox
+        ns:AtomForm.Label="Employee:"
+        
+        
+        FilterPath="FirstName,LastName"
+        
+        
+        ItemsSource="{Binding PersonList}">
+        <ns:AtomComboBox.ItemTemplate>
+          <DataTemplate>
+
+            <!-- Data Template is derived from View and not Cell -->
+
+            <Label Text="{Binding Name}" />
+          </DataTemplate>
+        </ns:AtomComboBox.ItemTemplate>
+      </ns:AtomComboBox>
+    </ns:AtomFieldGroup>
+  </ns:AtomForm>
+
+</ContentPage>

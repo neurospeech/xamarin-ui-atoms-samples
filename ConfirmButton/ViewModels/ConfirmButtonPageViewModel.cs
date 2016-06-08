@@ -4,8 +4,9 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
+using UIAtomsDemo;
 
-namespace UIAtomsDemo.ViewModels
+namespace ConfirmButton.ViewModels
 {
     public class ConfirmButtonPageViewModel : BaseViewModel
     {
@@ -23,3 +24,4 @@ namespace UIAtomsDemo.ViewModels
         }
     }
 }
+

@@ -18,5 +18,15 @@ namespace UIAtomsDemo.RestServices
 
         }
 
+
+        public virtual Task<Movie[]> GetMoviesAsync() {
+            return JsonGetAsync<Movie[]>("/config/movies", null);
+        }
+
+
+        public virtual Task<Person[]> GetPersonListAsync() {
+            return JsonGetAsync<Person[]>("/config/persons",null);
+        }
+
     }
 }

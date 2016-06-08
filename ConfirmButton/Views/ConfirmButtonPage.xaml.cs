@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 using Xamarin.Forms;
 
-namespace UIAtomsDemo.Views
+namespace ConfirmButton.Views
 {
 	public partial class ConfirmButtonPage : ContentPage
 	{

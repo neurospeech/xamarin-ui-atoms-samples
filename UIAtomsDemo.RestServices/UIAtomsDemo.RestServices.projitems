@@ -12,5 +12,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)BaseService.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ConfigService.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Models\Country.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\Movie.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\Person.cs" />
   </ItemGroup>
 </Project>
