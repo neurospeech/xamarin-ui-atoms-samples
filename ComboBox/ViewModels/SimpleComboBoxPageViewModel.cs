@@ -15,6 +15,28 @@ namespace ComboBox.ViewModels
         public AtomList<Country> CountryList { get; } =
             new AtomList<Country>();
 
+
+        #region Property SelectedCountryCode
+
+        private string _SelectedCountryCode = "US";
+
+        public string SelectedCountryCode
+        {
+            get
+            {
+                return _SelectedCountryCode;
+            }
+            set
+            {
+                SetProperty(ref _SelectedCountryCode, value);
+            }
+        }
+        #endregion
+
+
+
+
+
         public override async Task InitAsync()
         {
             var countryList = await Get<ConfigService>().GetCountriesAsync();

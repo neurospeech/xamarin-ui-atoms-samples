@@ -8,6 +8,8 @@
     <ns:AtomFieldGroup>
       <ns:AtomComboBox
         ns:AtomForm.Label="Country:"
+        ValuePath="CountryCode"
+        Value="{Binding SelectedCountryCode, Mode=TwoWay}"
         ItemsSource="{Binding CountryList}">
         <ns:AtomComboBox.ItemTemplate>
           <DataTemplate>
@@ -18,6 +20,9 @@
           </DataTemplate>
         </ns:AtomComboBox.ItemTemplate>
       </ns:AtomComboBox>
+
+      <Label Text="{Binding SelectedCountryCode}"/>
+      
     </ns:AtomFieldGroup>
   </ns:AtomForm>
   

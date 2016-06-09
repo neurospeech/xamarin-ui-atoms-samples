@@ -83,12 +83,12 @@ namespace UIAtomsDemo.Controls
         }
 
 
-        long collectionChangedLock = 0;
+        
         private void Ince_CollectionChanged(object sender, NotifyCollectionChangedEventArgs e)
         {
             if (MenuItems != null)
             {
-                UIAtomsApplication.Instance.Trigger(ref collectionChangedLock, UpdateCollection);
+                UIAtomsApplication.Instance.TriggerOnce(UpdateCollection);
             }
         }
 
