@@ -5,6 +5,9 @@
   xmlns:ns="clr-namespace:NeuroSpeech.UIAtoms.Controls;assembly=NeuroSpeech.UIAtoms"
   Title="Simple Validation"
   x:Class="Form.Views.SimpleValidationPage">
+  
+  <!-- Submit Command -->
+  
   <ns:AtomForm SubmitCommand="{Binding SubmitCommand}">
 
     <!-- Displays Header -->
