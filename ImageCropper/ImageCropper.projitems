@@ -3,19 +3,19 @@
   <PropertyGroup>
     <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
     <HasSharedItems>true</HasSharedItems>
-    <SharedGUID>6f68dc67-6631-4a7a-ba7d-74f6b3073704</SharedGUID>
+    <SharedGUID>21aee869-136f-4e29-b69b-dd4660b3ccc5</SharedGUID>
   </PropertyGroup>
   <PropertyGroup Label="Configuration">
-    <Import_RootNamespace>GridView</Import_RootNamespace>
+    <Import_RootNamespace>ImageCropper</Import_RootNamespace>
   </PropertyGroup>
   <ItemGroup>
-    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\GridViewPage.xaml">
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\ImageCropperPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\GridViewPageViewModel.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Views\GridViewPage.xaml.cs">
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\ImageCropperPageViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Views\ImageCropperPage.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>

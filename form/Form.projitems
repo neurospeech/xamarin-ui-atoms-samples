@@ -19,8 +19,12 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\CustomFieldPageViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModels\SimpleFormViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModels\SimpleValidationViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Views\CustomFieldPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)Views\SimpleFormPage.xaml.cs">
       <SubType>Code</SubType>
       <DependentUpon>SimpleFormPage.xaml</DependentUpon>
@@ -29,5 +33,10 @@
       <SubType>Code</SubType>
       <DependentUpon>SimpleValidationPage.xaml</DependentUpon>
     </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\CustomFieldPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
   </ItemGroup>
 </Project>

@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.25123.0
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UIAtomsDemo.Droid", "UIAtomsDemo\UIAtomsDemo.Droid\UIAtomsDemo.Droid.csproj", "{6E90F7F6-60CD-4112-BCC6-87D6A6E5D8A0}"
 EndProject
@@ -23,32 +23,67 @@ Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "UIAtomsDemo.RestServices.Mo
 EndProject
 Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "ConfirmButton", "ConfirmButton\ConfirmButton.shproj", "{25754EC6-4BD5-45A7-AD64-6B8C74E72794}"
 EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "Image", "Image\Image.shproj", "{FFA947A6-968A-467F-95BB-119E82DA4FFB}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "Calendar", "Calendar\Calendar.shproj", "{6AC0EC9D-CCB3-4701-8BAF-A12A535D5915}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "DatePicker", "DatePicker\DatePicker.shproj", "{C0CD688E-3BF1-48E8-BB2E-2072959E44D3}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "ImageCropper", "ImageCropper\ImageCropper.shproj", "{21AEE869-136F-4E29-B69B-DD4660B3CCC5}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "ListView", "ListView\ListView.shproj", "{DCBA9A12-6E88-4D41-8E63-D0A1B1CEFFA0}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "ToolBar", "ToolBar\ToolBar.shproj", "{3FA58286-46C4-41C3-99D1-2E12FEEDA66E}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "Chooser", "Chooser\Chooser.shproj", "{F9FDA484-84DA-4AFF-9BE1-428992DF2FF2}"
+EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
-		UIAtomsDemo.RestServices\UIAtomsDemo.RestServices.projitems*{6e90f7f6-60cd-4112-bcc6-87d6a6e5d8a0}*SharedItemsImports = 4
-		Form\Form.projitems*{6e90f7f6-60cd-4112-bcc6-87d6a6e5d8a0}*SharedItemsImports = 4
-		ConfirmButton\ConfirmButton.projitems*{6e90f7f6-60cd-4112-bcc6-87d6a6e5d8a0}*SharedItemsImports = 4
-		GridView\GridView.projitems*{6e90f7f6-60cd-4112-bcc6-87d6a6e5d8a0}*SharedItemsImports = 4
-		UIAtomsDemo\UIAtomsDemo\UIAtomsDemo.projitems*{6e90f7f6-60cd-4112-bcc6-87d6a6e5d8a0}*SharedItemsImports = 4
-		ToggleButtonBar\ToggleButtonBar.projitems*{6e90f7f6-60cd-4112-bcc6-87d6a6e5d8a0}*SharedItemsImports = 4
-		UIAtomsDemo.RestServices.Mock\UIAtomsDemo.RestServices.Mock.projitems*{6e90f7f6-60cd-4112-bcc6-87d6a6e5d8a0}*SharedItemsImports = 4
-		ComboBox\ComboBox.projitems*{6e90f7f6-60cd-4112-bcc6-87d6a6e5d8a0}*SharedItemsImports = 4
 		Form\Form.projitems*{08d8e865-ee8c-49a0-bd6c-3faa8154bf9d}*SharedItemsImports = 13
-		ConfirmButton\ConfirmButton.projitems*{25754ec6-4bd5-45a7-ad64-6b8c74e72794}*SharedItemsImports = 13
-		UIAtomsDemo.RestServices\UIAtomsDemo.RestServices.projitems*{159e377e-e906-49b5-96c4-e4c425fb828e}*SharedItemsImports = 4
-		Form\Form.projitems*{159e377e-e906-49b5-96c4-e4c425fb828e}*SharedItemsImports = 4
-		ConfirmButton\ConfirmButton.projitems*{159e377e-e906-49b5-96c4-e4c425fb828e}*SharedItemsImports = 4
-		GridView\GridView.projitems*{159e377e-e906-49b5-96c4-e4c425fb828e}*SharedItemsImports = 4
-		UIAtomsDemo\UIAtomsDemo\UIAtomsDemo.projitems*{159e377e-e906-49b5-96c4-e4c425fb828e}*SharedItemsImports = 4
-		ToggleButtonBar\ToggleButtonBar.projitems*{159e377e-e906-49b5-96c4-e4c425fb828e}*SharedItemsImports = 4
-		UIAtomsDemo.RestServices.Mock\UIAtomsDemo.RestServices.Mock.projitems*{159e377e-e906-49b5-96c4-e4c425fb828e}*SharedItemsImports = 4
-		ComboBox\ComboBox.projitems*{159e377e-e906-49b5-96c4-e4c425fb828e}*SharedItemsImports = 4
 		ComboBox\ComboBox.projitems*{0b1a7d6f-144e-4ee9-84a6-5b199feb9dc3}*SharedItemsImports = 13
-		UIAtomsDemo.RestServices.Mock\UIAtomsDemo.RestServices.Mock.projitems*{5aed3eb6-7e29-4308-9d68-6117e771eae5}*SharedItemsImports = 13
-		ToggleButtonBar\ToggleButtonBar.projitems*{344f2617-a430-4784-a3dd-d908d63e9e30}*SharedItemsImports = 13
+		Calendar\Calendar.projitems*{159e377e-e906-49b5-96c4-e4c425fb828e}*SharedItemsImports = 4
+		Chooser\Chooser.projitems*{159e377e-e906-49b5-96c4-e4c425fb828e}*SharedItemsImports = 4
+		ComboBox\ComboBox.projitems*{159e377e-e906-49b5-96c4-e4c425fb828e}*SharedItemsImports = 4
+		ConfirmButton\ConfirmButton.projitems*{159e377e-e906-49b5-96c4-e4c425fb828e}*SharedItemsImports = 4
+		DatePicker\DatePicker.projitems*{159e377e-e906-49b5-96c4-e4c425fb828e}*SharedItemsImports = 4
+		Form\Form.projitems*{159e377e-e906-49b5-96c4-e4c425fb828e}*SharedItemsImports = 4
+		GridView\GridView.projitems*{159e377e-e906-49b5-96c4-e4c425fb828e}*SharedItemsImports = 4
+		ImageCropper\ImageCropper.projitems*{159e377e-e906-49b5-96c4-e4c425fb828e}*SharedItemsImports = 4
+		Image\Image.projitems*{159e377e-e906-49b5-96c4-e4c425fb828e}*SharedItemsImports = 4
+		ListView\ListView.projitems*{159e377e-e906-49b5-96c4-e4c425fb828e}*SharedItemsImports = 4
+		ToggleButtonBar\ToggleButtonBar.projitems*{159e377e-e906-49b5-96c4-e4c425fb828e}*SharedItemsImports = 4
+		ToolBar\ToolBar.projitems*{159e377e-e906-49b5-96c4-e4c425fb828e}*SharedItemsImports = 4
+		UIAtomsDemo.RestServices.Mock\UIAtomsDemo.RestServices.Mock.projitems*{159e377e-e906-49b5-96c4-e4c425fb828e}*SharedItemsImports = 4
+		UIAtomsDemo.RestServices\UIAtomsDemo.RestServices.projitems*{159e377e-e906-49b5-96c4-e4c425fb828e}*SharedItemsImports = 4
+		UIAtomsDemo\UIAtomsDemo\UIAtomsDemo.projitems*{159e377e-e906-49b5-96c4-e4c425fb828e}*SharedItemsImports = 4
 		UIAtomsDemo.RestServices\UIAtomsDemo.RestServices.projitems*{1e022ff6-2609-42f9-8885-4fb90f9942ed}*SharedItemsImports = 13
-		UIAtomsDemo\UIAtomsDemo\UIAtomsDemo.projitems*{d136d210-8d15-4352-a368-212286511121}*SharedItemsImports = 13
+		ImageCropper\ImageCropper.projitems*{21aee869-136f-4e29-b69b-dd4660b3ccc5}*SharedItemsImports = 13
+		ConfirmButton\ConfirmButton.projitems*{25754ec6-4bd5-45a7-ad64-6b8c74e72794}*SharedItemsImports = 13
+		ToggleButtonBar\ToggleButtonBar.projitems*{344f2617-a430-4784-a3dd-d908d63e9e30}*SharedItemsImports = 13
+		ToolBar\ToolBar.projitems*{3fa58286-46c4-41c3-99d1-2e12feeda66e}*SharedItemsImports = 13
+		UIAtomsDemo.RestServices.Mock\UIAtomsDemo.RestServices.Mock.projitems*{5aed3eb6-7e29-4308-9d68-6117e771eae5}*SharedItemsImports = 13
+		Calendar\Calendar.projitems*{6ac0ec9d-ccb3-4701-8baf-a12a535d5915}*SharedItemsImports = 13
+		Calendar\Calendar.projitems*{6e90f7f6-60cd-4112-bcc6-87d6a6e5d8a0}*SharedItemsImports = 4
+		Chooser\Chooser.projitems*{6e90f7f6-60cd-4112-bcc6-87d6a6e5d8a0}*SharedItemsImports = 4
+		ComboBox\ComboBox.projitems*{6e90f7f6-60cd-4112-bcc6-87d6a6e5d8a0}*SharedItemsImports = 4
+		ConfirmButton\ConfirmButton.projitems*{6e90f7f6-60cd-4112-bcc6-87d6a6e5d8a0}*SharedItemsImports = 4
+		DatePicker\DatePicker.projitems*{6e90f7f6-60cd-4112-bcc6-87d6a6e5d8a0}*SharedItemsImports = 4
+		Form\Form.projitems*{6e90f7f6-60cd-4112-bcc6-87d6a6e5d8a0}*SharedItemsImports = 4
+		GridView\GridView.projitems*{6e90f7f6-60cd-4112-bcc6-87d6a6e5d8a0}*SharedItemsImports = 4
+		ImageCropper\ImageCropper.projitems*{6e90f7f6-60cd-4112-bcc6-87d6a6e5d8a0}*SharedItemsImports = 4
+		Image\Image.projitems*{6e90f7f6-60cd-4112-bcc6-87d6a6e5d8a0}*SharedItemsImports = 4
+		ListView\ListView.projitems*{6e90f7f6-60cd-4112-bcc6-87d6a6e5d8a0}*SharedItemsImports = 4
+		ToggleButtonBar\ToggleButtonBar.projitems*{6e90f7f6-60cd-4112-bcc6-87d6a6e5d8a0}*SharedItemsImports = 4
+		ToolBar\ToolBar.projitems*{6e90f7f6-60cd-4112-bcc6-87d6a6e5d8a0}*SharedItemsImports = 4
+		UIAtomsDemo.RestServices.Mock\UIAtomsDemo.RestServices.Mock.projitems*{6e90f7f6-60cd-4112-bcc6-87d6a6e5d8a0}*SharedItemsImports = 4
+		UIAtomsDemo.RestServices\UIAtomsDemo.RestServices.projitems*{6e90f7f6-60cd-4112-bcc6-87d6a6e5d8a0}*SharedItemsImports = 4
+		UIAtomsDemo\UIAtomsDemo\UIAtomsDemo.projitems*{6e90f7f6-60cd-4112-bcc6-87d6a6e5d8a0}*SharedItemsImports = 4
 		GridView\GridView.projitems*{6f68dc67-6631-4a7a-ba7d-74f6b3073704}*SharedItemsImports = 13
+		DatePicker\DatePicker.projitems*{c0cd688e-3bf1-48e8-bb2e-2072959e44d3}*SharedItemsImports = 13
+		UIAtomsDemo\UIAtomsDemo\UIAtomsDemo.projitems*{d136d210-8d15-4352-a368-212286511121}*SharedItemsImports = 13
+		ListView\ListView.projitems*{dcba9a12-6e88-4d41-8e63-d0a1b1ceffa0}*SharedItemsImports = 13
+		Chooser\Chooser.projitems*{f9fda484-84da-4aff-9be1-428992df2ff2}*SharedItemsImports = 13
+		Image\Image.projitems*{ffa947a6-968a-467f-95bb-119e82da4ffb}*SharedItemsImports = 13
 	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Ad-Hoc|Any CPU = Ad-Hoc|Any CPU

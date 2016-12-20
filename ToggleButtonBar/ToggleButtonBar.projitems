@@ -9,5 +9,14 @@
     <Import_RootNamespace>ToggleButtonBar</Import_RootNamespace>
   </PropertyGroup>
   <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\ToggleButtonBarPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\ToggleButtonBarPageViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Views\ToggleButtonBarPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
 </Project>

@@ -3,19 +3,19 @@
   <PropertyGroup>
     <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
     <HasSharedItems>true</HasSharedItems>
-    <SharedGUID>6f68dc67-6631-4a7a-ba7d-74f6b3073704</SharedGUID>
+    <SharedGUID>c0cd688e-3bf1-48e8-bb2e-2072959e44d3</SharedGUID>
   </PropertyGroup>
   <PropertyGroup Label="Configuration">
-    <Import_RootNamespace>GridView</Import_RootNamespace>
+    <Import_RootNamespace>DatePicker</Import_RootNamespace>
   </PropertyGroup>
   <ItemGroup>
-    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\GridViewPage.xaml">
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\DatePickerPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\GridViewPageViewModel.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Views\GridViewPage.xaml.cs">
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\DatePickerPageViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Views\DatePickerPage.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>

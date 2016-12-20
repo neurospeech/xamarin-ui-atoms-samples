@@ -3,19 +3,19 @@
   <PropertyGroup>
     <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
     <HasSharedItems>true</HasSharedItems>
-    <SharedGUID>6f68dc67-6631-4a7a-ba7d-74f6b3073704</SharedGUID>
+    <SharedGUID>6ac0ec9d-ccb3-4701-8baf-a12a535d5915</SharedGUID>
   </PropertyGroup>
   <PropertyGroup Label="Configuration">
-    <Import_RootNamespace>GridView</Import_RootNamespace>
+    <Import_RootNamespace>Calendar</Import_RootNamespace>
   </PropertyGroup>
   <ItemGroup>
-    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\GridViewPage.xaml">
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\CalendarPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\GridViewPageViewModel.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Views\GridViewPage.xaml.cs">
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\CalendarPageViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Views\CalendarPage.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
