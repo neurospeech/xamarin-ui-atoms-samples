@@ -4,8 +4,23 @@
              xmlns:ns="clr-namespace:NeuroSpeech.UIAtoms.Controls;assembly=NeuroSpeech.UIAtoms"
              x:Class="Chooser.Views.ChooserPage">
     <Grid>
-        <ns:AtomChooser
-            
-            ></ns:AtomChooser>
+        <ns:AtomForm>
+            <ns:AtomFieldGroup>
+                
+                
+                <ns:AtomChooser
+                    ns:AtomForm.Label="Youtube Video:"
+                    ItemsSource="{Binding Videos}"
+                    LabelPath="Title"
+                    ValuePath="ID"
+                    Value="{Binding SelectedVideoID, Mode=TwoWay}"
+                    />
+
+                <Label
+                    ns:AtomForm.Label="Selected Video ID:"
+                    Text="{Binding SelectedVideoID}"
+                    />
+            </ns:AtomFieldGroup>
+        </ns:AtomForm>
     </Grid>
 </ContentPage>

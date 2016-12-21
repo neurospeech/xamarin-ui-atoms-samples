@@ -1,6 +1,8 @@
 ﻿using Calendar.Views;
+using Chooser.Views;
 using ComboBox.Views;
 using ConfirmButton.Views;
+using DatePicker.Views;
 using Form;
 using Form.Views;
 using NeuroSpeech.UIAtoms;
@@ -56,12 +58,19 @@ namespace UIAtomsDemo
 
             menuService.Add<ConfirmButtonPage>("Confirm Button", "Button");
 
-            menuService.Add<SimpleComboBoxPage>("Simple ComboBox", "ComboBox");
-            menuService.Add<ComboBoxPropertyFilterPage>("Property Filter", "ComboBox");
+            //menuService.Add<SimpleComboBoxPage>("Simple ComboBox", "ComboBox");
+            //menuService.Add<ComboBoxPropertyFilterPage>("Property Filter", "ComboBox");
+
+            menuService.Add<ChooserPage>("Chooser", "Chooser");
+            menuService.Add<ChooserItemTemplatePage>("Chooser - ItemTemplate", "Chooser");
+            menuService.Add<ChooserMultipleSelectionPage>("Chooser - Multiple Selection", "Chooser");
 
             menuService.Add<CalendarPage>("Calendar - SelectedDate", "Calendar");
             menuService.Add<CalendarTapCommandPage>("Calendar - TapCommand", "Calendar");
             menuService.Add<CalendarItemTemplatePage>("Calendar - ItemTemplate", "Calendar");
+
+
+            menuService.Add<DatePickerPage>("Date Picker", "Date Picker");
 
 
             try

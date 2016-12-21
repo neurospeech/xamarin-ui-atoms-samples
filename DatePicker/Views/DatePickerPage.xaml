@@ -3,5 +3,16 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:ns="clr-namespace:NeuroSpeech.UIAtoms.Controls;assembly=NeuroSpeech.UIAtoms"
              x:Class="DatePicker.Views.DatePickerPage">
-	<Label Text="{Binding MainText}" VerticalOptions="Center" HorizontalOptions="Center" />
+    <Grid>
+        <ns:AtomForm HideSingleGroup="False">
+            <ns:AtomFieldGroup Category="Date Picker">
+
+
+                <ns:AtomDatePicker 
+                    ns:AtomForm.Label="Date:"
+                    Value="{Binding SelectedDate}"/>
+                <Label Text="{Binding SelectedDate}"/>
+            </ns:AtomFieldGroup>
+        </ns:AtomForm>
+    </Grid>
 </ContentPage>

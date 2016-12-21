@@ -28,6 +28,17 @@ namespace UIAtomsDemo.Droid
             FormsAppCompatActivity.ToolbarResource = Resource.Layout.toolbar;
             LoadApplication(new UIAtomsDemo.App ());
 		}
-	}
+
+        protected override void OnDestroy()
+        {
+            try
+            {
+                base.OnDestroy();
+            }
+            catch (Exception ex) {
+                System.Diagnostics.Debug.Fail(ex.ToString());
+            }
+        }
+    }
 }
 

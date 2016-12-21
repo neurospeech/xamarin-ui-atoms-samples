@@ -14,8 +14,12 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\ChooserItemTemplatePageViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModels\ChooserMultipleSelectionPageViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModels\ChooserPageViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Views\ChooserItemTemplatePage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)Views\ChooserMultipleSelectionPage.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -25,6 +29,11 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\ChooserMultipleSelectionPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\ChooserItemTemplatePage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
   </ItemGroup>

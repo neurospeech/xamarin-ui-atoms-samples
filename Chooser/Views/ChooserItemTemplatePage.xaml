@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:ns="clr-namespace:NeuroSpeech.UIAtoms.Controls;assembly=NeuroSpeech.UIAtoms"
+             x:Class="Chooser.Views.ChooserItemTemplatePage">
+    <Grid>
+        <ns:AtomForm>
+            <ns:AtomFieldGroup>
+
+
+                <ns:AtomChooser
+                    ns:AtomForm.Label="Youtube Video:"
+                    ItemsSource="{Binding Videos}"
+                    LabelPath="Title"
+                    ValuePath="ID"
+                    Value="{Binding SelectedVideoID, Mode=TwoWay}">
+                    <ns:AtomChooser.ItemTemplate>
+                        <DataTemplate>
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="50"/>
+                                    <ColumnDefinition/>
+                                    <ColumnDefinition/>
+                                </Grid.ColumnDefinitions>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition/>
+                                    <RowDefinition Height="Auto"/>
+                                </Grid.RowDefinitions>
+                                <ns:AtomImage
+                                    Grid.RowSpan="2"
+                                    Source="{Binding Thumbnail}"/>
+                                <Label
+                                    Text="{Binding Title}"
+                                    Grid.Column="1"
+                                    />
+                                <Label
+                                    Text="{Binding Views, StringFormat='({0})'}"
+                                    Grid.Column="2"
+                                    />
+
+                                <Label
+                                    Text="{Binding UpVotes, StringFormat='Up {0}'}"
+                                    Grid.Column="1"
+                                    Grid.Row="1"
+                                    />
+                                <Label
+                                    Text="{Binding DownVotes, StringFormat='Down {0}'}"
+                                    Grid.Column="2"
+                                    Grid.Row="1"
+                                    />
+
+                            </Grid>
+                        </DataTemplate>
+                    </ns:AtomChooser.ItemTemplate>
+                </ns:AtomChooser>
+
+                <Label
+                    ns:AtomForm.Label="Selected Video ID:"
+                    Text="{Binding SelectedVideoID}"
+                    />
+            </ns:AtomFieldGroup>
+        </ns:AtomForm>
+    </Grid>
+</ContentPage>
