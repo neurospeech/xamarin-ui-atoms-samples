@@ -11,7 +11,7 @@ using System.Collections.Specialized;
 namespace UIAtomsDemo.Controls
 {
 
-    public class MenuList : ListView {
+    public class MenuList : Xamarin.Forms.ListView {
 
         public MenuList()
         {

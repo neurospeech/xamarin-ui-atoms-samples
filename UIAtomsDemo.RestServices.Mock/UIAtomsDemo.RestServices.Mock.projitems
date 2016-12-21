@@ -11,5 +11,6 @@
   <ItemGroup>
     <Compile Include="$(MSBuildThisFileDirectory)MockApp.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)MockConfigService.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)MockYouTubeService.cs" />
   </ItemGroup>
 </Project>

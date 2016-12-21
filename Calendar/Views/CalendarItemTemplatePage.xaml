@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:ns="clr-namespace:NeuroSpeech.UIAtoms.Controls;assembly=NeuroSpeech.UIAtoms"
+             x:Class="Calendar.Views.CalendarItemTemplatePage">
+    <Grid>
+        <ns:AtomCalendar>
+            <ns:AtomCalendar.ItemTemplate>
+                <DataTemplate>
+                    <Label 
+                        Margin="3"
+                        Text="{Binding Label}">
+                        <Label.Triggers>
+                            <DataTrigger TargetType="Label"
+                                         Binding="{Binding IsWeekend}" 
+                                         Value="true">
+                                <Setter Property="TextColor" Value="#707070"></Setter>
+                            </DataTrigger>
+                            <DataTrigger TargetType="Label"
+                                         Binding="{Binding IsToday}" 
+                                         Value="true">
+                                <Setter Property="BackgroundColor" Value="#00FF00"></Setter>
+                            </DataTrigger>
+                        </Label.Triggers>
+                    </Label>
+                </DataTemplate>
+            </ns:AtomCalendar.ItemTemplate>
+        </ns:AtomCalendar>
+    </Grid>
+</ContentPage>

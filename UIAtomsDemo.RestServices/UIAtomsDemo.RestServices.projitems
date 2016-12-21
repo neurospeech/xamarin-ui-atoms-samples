@@ -14,5 +14,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)Models\Country.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Models\Movie.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Models\Person.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\YouTubeVideo.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)YouTubeService.cs" />
   </ItemGroup>
 </Project>

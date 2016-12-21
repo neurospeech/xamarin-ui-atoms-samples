@@ -6,6 +6,7 @@ using System.Text;
 using UIAtomsDemo.Services;
 using UIAtomsDemo.Views;
 using Xamarin.Forms;
+using System.Threading.Tasks;
 
 namespace UIAtomsDemo
 {
@@ -14,16 +15,35 @@ namespace UIAtomsDemo
 
         public RootPage()
         {
-            var appNavigator = DependencyService.Get<IAppNavigator>();
-            Master = appNavigator.NewPage<MenuPage>();
+
+            Master = new ContentPage {
+                Title = "Loading..."
+            };
+
+            Detail = new ContentPage {
+                Content = new Label {
+                    Text = "Loading..."
+                }
+            };
 
             var menuService = DependencyService.Get<MenuService>();
 
-            Detail = menuService.Menus.First().Page;
-
             menuService.MenuClicked += MenuService_MenuClicked;
 
+            Device.BeginInvokeOnMainThread(async () => await LoadDefaultPage());
+
             
+        }
+
+        private async Task LoadDefaultPage()
+        {
+            var appNavigator = DependencyService.Get<IAppNavigator>();
+            var menuService = DependencyService.Get<MenuService>();
+            Master = await appNavigator.NewPage<MenuPage>();
+
+
+            Detail = await menuService.Menus.First().GetPageAsync();
+
         }
 
         private void MenuService_MenuClicked(object sender, EventArgs e)

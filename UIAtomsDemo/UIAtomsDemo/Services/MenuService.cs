@@ -7,6 +7,7 @@ using System.Text;
 using UIAtomsDemo.Services;
 using Xamarin.Forms;
 using System.Collections.Specialized;
+using System.Threading.Tasks;
 
 [assembly: Dependency(typeof(MenuService))]
 
@@ -48,17 +49,17 @@ namespace UIAtomsDemo.Services
                 PageType = typeof(T)
             };
 
-            mi.Action = () => {
+            mi.Action = async () => {
                 MasterDetailPage mdp = App.Current.MainPage as MasterDetailPage;
                 if (mdp != null)
                 {
-                    mdp.Detail = mi.Page;
+                    mdp.Detail = await mi.GetPageAsync();
                 }
                 else {
-                    App.Current.MainPage = mi.Page;
+                    App.Current.MainPage = await mi.GetPageAsync();
                 }
 
-                Page np = mi.Page; 
+                Page np = await mi.GetPageAsync(); 
                 if (np is NavigationPage) {
                     np = ((NavigationPage)np).CurrentPage;
                 }
@@ -231,16 +232,27 @@ namespace UIAtomsDemo.Services
         }
 
         private Page _page;
-        public Page Page {
-            get {
-
-                if (_page == null && _PageType!=null) {
-                    var navService = DependencyService.Get<IAppNavigator>();
-                    _page = new NavigationPage(navService.NewPage(PageType));
-                }
-                return _page;
+        internal async Task<Page> GetPageAsync()
+        {
+            if (_page == null & _PageType != null) {
+                var navService = DependencyService.Get<IAppNavigator>();
+                var p = await navService.NewPage(_PageType);
+                p.Title = Label;
+                _page = new NavigationPage(p);
             }
+            return _page;
         }
+
+        //public Page Page {
+        //    get {
+
+        //        if (_page == null && _PageType!=null) {
+        //            var navService = DependencyService.Get<IAppNavigator>();
+        //            _page = new NavigationPage(navService.NewPage(PageType));
+        //        }
+        //        return _page;
+        //    }
+        //}
 
     }
 

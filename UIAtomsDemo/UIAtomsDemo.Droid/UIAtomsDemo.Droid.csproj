@@ -54,8 +54,8 @@
     </Reference>
     <Reference Include="Mono.Android" />
     <Reference Include="mscorlib" />
-    <Reference Include="NeuroSpeech.UIAtoms, Version=1.2.172.2562, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\UIAtoms.Xamarin.Forms.1.2.172\lib\MonoAndroid10\NeuroSpeech.UIAtoms.dll</HintPath>
+    <Reference Include="NeuroSpeech.UIAtoms, Version=1.2.176.23852, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\UIAtoms.Xamarin.Forms.1.2.176\lib\MonoAndroid10\NeuroSpeech.UIAtoms.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
@@ -124,12 +124,24 @@
     <None Include="packages.config" />
     <None Include="Resources\AboutResources.txt" />
     <None Include="Assets\AboutAssets.txt" />
+    <AndroidResource Include="Resources\Layout\toolbar.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\Drawable\Icon.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Properties\AndroidManifest.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\Values\Styles.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\Values\Colors.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\Values\Theme.xml" />
   </ItemGroup>
   <Import Project="..\UIAtomsDemo\UIAtomsDemo.projitems" Label="Shared" Condition="Exists('..\UIAtomsDemo\UIAtomsDemo.projitems')" />
   <Import Project="..\..\ComboBox\ComboBox.projitems" Label="Shared" />

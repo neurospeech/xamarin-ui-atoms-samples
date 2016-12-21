@@ -1,4 +1,5 @@
-﻿using ComboBox.Views;
+﻿using Calendar.Views;
+using ComboBox.Views;
 using ConfirmButton.Views;
 using Form;
 using Form.Views;
@@ -57,6 +58,10 @@ namespace UIAtomsDemo
 
             menuService.Add<SimpleComboBoxPage>("Simple ComboBox", "ComboBox");
             menuService.Add<ComboBoxPropertyFilterPage>("Property Filter", "ComboBox");
+
+            menuService.Add<CalendarPage>("Calendar - SelectedDate", "Calendar");
+            menuService.Add<CalendarTapCommandPage>("Calendar - TapCommand", "Calendar");
+            menuService.Add<CalendarItemTemplatePage>("Calendar - ItemTemplate", "Calendar");
 
 
             try

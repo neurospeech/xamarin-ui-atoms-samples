@@ -10,6 +10,7 @@ namespace UIAtomsDemo.RestServices.Mock
 
         public static void Init() {
             DependencyService.Register<ConfigService, MockConfigService>();
+            DependencyService.Register<YouTubeService, MockYouTubeService>();
         }
 
     }
