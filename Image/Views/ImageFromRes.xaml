@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:ns="clr-namespace:NeuroSpeech.UIAtoms.Controls;assembly=NeuroSpeech.UIAtoms"
+             x:Class="Image.Views.ImageFromRes">
+    <StackLayout Orientation="Vertical">
+
+        <Label 
+            Margin="5" 
+            Text="Host name should be name of assembly and path to embedded resource"/>
+
+        <ns:AtomImage
+            Margin="5"
+            Source="res://NeuroSpeech.UIAtoms/Images.DropDownImage.png"
+            />
+
+    </StackLayout>
+</ContentPage>

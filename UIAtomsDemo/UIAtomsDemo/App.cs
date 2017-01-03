@@ -5,6 +5,7 @@ using ConfirmButton.Views;
 using DatePicker.Views;
 using Form;
 using Form.Views;
+using Image.Views;
 using NeuroSpeech.UIAtoms;
 using System;
 using System.Collections.Generic;
@@ -60,6 +61,11 @@ namespace UIAtomsDemo
 
             //menuService.Add<SimpleComboBoxPage>("Simple ComboBox", "ComboBox");
             //menuService.Add<ComboBoxPropertyFilterPage>("Property Filter", "ComboBox");
+
+            menuService.Add<ImageFromWeb>("Image from Web", "Image");
+            menuService.Add<ImageFromRes>("Image from Assembly Resource", "Image");
+            menuService.Add<ImageFromAppRes>("Image from Application Resource", "Image");
+            //menuService.Add<ImageFromWeb>("Image from Web", "Image");
 
             menuService.Add<ChooserPage>("Chooser", "Chooser");
             menuService.Add<ChooserItemTemplatePage>("Chooser - ItemTemplate", "Chooser");

@@ -16,7 +16,16 @@
   <ItemGroup>
     <Compile Include="$(MSBuildThisFileDirectory)ViewModels\ImageFromStaticPageViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModels\ImageWithProgressPageViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Views\ImageFromAppRes.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Views\ImageFromRes.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)Views\ImageFromStaticPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Views\ImageFromWeb.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)Views\ImageWithProgressPage.xaml.cs">
@@ -27,5 +36,25 @@
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\ImageFromStaticPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\ImageFromWeb.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\ImageFromRes.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\ImageFromAppRes.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)AppImages\Milkyway.jpg" />
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)AppImages\SolarFlare.jpg" />
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)AppImages\SpaceShuttle.jpg" />
   </ItemGroup>
 </Project>
