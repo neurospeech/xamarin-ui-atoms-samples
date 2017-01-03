@@ -116,8 +116,8 @@
     <InterfaceDefinition Include="Resources\LaunchScreen.storyboard" />
   </ItemGroup>
   <ItemGroup>
-    <Reference Include="NeuroSpeech.UIAtoms, Version=1.2.203.34446, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\UIAtoms.Xamarin.Forms.1.2.203\lib\Xamarin.iOS10\NeuroSpeech.UIAtoms.dll</HintPath>
+    <Reference Include="NeuroSpeech.UIAtoms, Version=1.2.206.38830, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\UIAtoms.Xamarin.Forms.1.2.206\lib\Xamarin.iOS10\NeuroSpeech.UIAtoms.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
