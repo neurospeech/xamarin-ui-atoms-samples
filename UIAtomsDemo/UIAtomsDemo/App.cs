@@ -11,6 +11,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using ToolBar.Views;
 using UIAtomsDemo.RestServices.Mock;
 using UIAtomsDemo.Services;
 using UIAtomsDemo.Views;
@@ -66,6 +67,9 @@ namespace UIAtomsDemo
             menuService.Add<ImageFromRes>("Image from Assembly Resource", "Image");
             menuService.Add<ImageFromAppRes>("Image from Application Resource", "Image");
             //menuService.Add<ImageFromWeb>("Image from Web", "Image");
+
+            menuService.Add<ToolbarItemVisibility>("Toolbar Visibility", "Toolbar");
+            menuService.Add<ToolbarItemPopup>("Toolbar Popup", "Toolbar");
 
             menuService.Add<ChooserPage>("Chooser", "Chooser");
             menuService.Add<ChooserItemTemplatePage>("Chooser - ItemTemplate", "Chooser");

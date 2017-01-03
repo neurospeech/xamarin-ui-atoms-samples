@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:ns="clr-namespace:NeuroSpeech.UIAtoms.Controls;assembly=NeuroSpeech.UIAtoms"
+             x:Class="ToolBar.Views.ToolbarItemPopup">
+
+    <ContentPage.ToolbarItems>
+        <ns:AtomPopupToolbarItem Text="Search">
+            <DataTemplate>
+                <StackLayout Orientation="Vertical" Spacing="5">
+                    <Entry ns:AtomForm.Label="Search" Placeholder="Search"/>
+                    <Button Text="Search"/>
+                </StackLayout>
+            </DataTemplate>
+        </ns:AtomPopupToolbarItem>
+    </ContentPage.ToolbarItems>
+    
+    <Grid>
+        <Label
+            Text="Click on option to open popup"
+            />
+    </Grid>
+</ContentPage>

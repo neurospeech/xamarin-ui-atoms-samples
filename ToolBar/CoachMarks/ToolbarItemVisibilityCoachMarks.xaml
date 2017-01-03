@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ns:AtomCoachMarkPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:ns="clr-namespace:NeuroSpeech.UIAtoms.Controls;assembly=NeuroSpeech.UIAtoms"
+             x:Class="ToolBar.CoachMarks.ToolbarItemVisibilityCoachMarks">
+
+    <ns:AtomCoachMarkContent
+        Text="Toggle the given switch to turn on toolbar button"
+        >
+        <Label Text="Click here to turn on Toolbar button"/>
+    </ns:AtomCoachMarkContent>
+
+    <ns:AtomCoachMarkImage
+        Source="app-res:///CoachMarks/TopRightArrow.png"
+        Text="Then toolbar button will be active here"/>
+
+</ns:AtomCoachMarkPage>
