@@ -3,5 +3,47 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:ns="clr-namespace:NeuroSpeech.UIAtoms.Controls;assembly=NeuroSpeech.UIAtoms"
              x:Class="ImageCropper.Views.ImageCropperPage">
-	<Label Text="{Binding MainText}" VerticalOptions="Center" HorizontalOptions="Center" />
+    <Grid ColumnSpacing="5" RowSpacing="5" Padding="5">
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        
+        
+        <ns:AtomImageCropper
+            Grid.ColumnSpan="2"
+            x:Name="cropper"
+            Source="app-res:///AppImages/Milkyway.jpg"
+            CropAspectRatio="0.667"
+            />
+
+
+        <Button
+            Grid.Row="1"
+            Text="Undo"
+            Command="{Binding UndoCommand, Source={x:Reference cropper}}"
+            IsEnabled="{Binding CanUndo, Source={x:Reference cropper}}"
+            />
+
+        <Button
+            Grid.Row="1"
+            Grid.Column="1"
+            Text="Crop"
+            Command="{Binding CropCommand, Source={x:Reference cropper}}"
+            IsEnabled="{Binding CanUndo, Source={x:Reference cropper}, Converter={x:Static ns:NegateBooleanConverter.Instance}}"
+            />
+
+        <Label
+            Grid.Row="2"
+            Grid.ColumnSpan="2"
+            IsVisible="{Binding CanUndo, Source={x:Reference cropper}}"
+            Text="{Binding Source,Source={x:Reference cropper}, StringFormat='Cropped file {0}'}"
+            />
+
+    </Grid>
 </ContentPage>

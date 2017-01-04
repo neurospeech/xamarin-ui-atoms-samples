@@ -6,6 +6,7 @@ using DatePicker.Views;
 using Form;
 using Form.Views;
 using Image.Views;
+using ImageCropper.Views;
 using NeuroSpeech.UIAtoms;
 using System;
 using System.Collections.Generic;
@@ -66,6 +67,7 @@ namespace UIAtomsDemo
             menuService.Add<ImageFromWeb>("Image from Web", "Image");
             menuService.Add<ImageFromRes>("Image from Assembly Resource", "Image");
             menuService.Add<ImageFromAppRes>("Image from Application Resource", "Image");
+            menuService.Add<ImageCropperPage>("Image Cropper", "Image");
             //menuService.Add<ImageFromWeb>("Image from Web", "Image");
 
             menuService.Add<ToolbarItemVisibility>("Toolbar Visibility", "Toolbar");
