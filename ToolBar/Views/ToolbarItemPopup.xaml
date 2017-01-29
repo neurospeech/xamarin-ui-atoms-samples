@@ -9,7 +9,13 @@
             <DataTemplate>
                 <StackLayout Orientation="Vertical" Spacing="5">
                     <Entry ns:AtomForm.Label="Search" Placeholder="Search"/>
-                    <Button Text="Search"/>
+                    
+                    <!--  AtomButton will automatically popup after it is clicked...  -->
+                    <!--  Only if Command is bound  -->
+                    
+                    <ns:AtomButton 
+                        Command="{Binding SearchCommand}"
+                        Text="Search"/>
                 </StackLayout>
             </DataTemplate>
         </ns:AtomPopupToolbarItem>

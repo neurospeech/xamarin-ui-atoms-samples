@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.25123.0
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UIAtomsDemo.Droid", "UIAtomsDemo\UIAtomsDemo.Droid\UIAtomsDemo.Droid.csproj", "{6E90F7F6-60CD-4112-BCC6-87D6A6E5D8A0}"
 EndProject
@@ -26,21 +26,28 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
-		ComboBox\ComboBox.projitems*{6e90f7f6-60cd-4112-bcc6-87d6a6e5d8a0}*SharedItemsImports = 4
-		UIAtomsDemo\UIAtomsDemo\UIAtomsDemo.projitems*{6e90f7f6-60cd-4112-bcc6-87d6a6e5d8a0}*SharedItemsImports = 4
-		ToggleButtonBar\ToggleButtonBar.projitems*{6e90f7f6-60cd-4112-bcc6-87d6a6e5d8a0}*SharedItemsImports = 4
-		ConfirmButton\ConfirmButton.projitems*{6e90f7f6-60cd-4112-bcc6-87d6a6e5d8a0}*SharedItemsImports = 4
-		Form\Form.projitems*{6e90f7f6-60cd-4112-bcc6-87d6a6e5d8a0}*SharedItemsImports = 4
-		UIAtomsDemo.RestServices.Mock\UIAtomsDemo.RestServices.Mock.projitems*{6e90f7f6-60cd-4112-bcc6-87d6a6e5d8a0}*SharedItemsImports = 4
-		UIAtomsDemo.RestServices\UIAtomsDemo.RestServices.projitems*{6e90f7f6-60cd-4112-bcc6-87d6a6e5d8a0}*SharedItemsImports = 4
-		GridView\GridView.projitems*{6e90f7f6-60cd-4112-bcc6-87d6a6e5d8a0}*SharedItemsImports = 4
 		Form\Form.projitems*{08d8e865-ee8c-49a0-bd6c-3faa8154bf9d}*SharedItemsImports = 13
 		ComboBox\ComboBox.projitems*{0b1a7d6f-144e-4ee9-84a6-5b199feb9dc3}*SharedItemsImports = 13
-		UIAtomsDemo.RestServices.Mock\UIAtomsDemo.RestServices.Mock.projitems*{5aed3eb6-7e29-4308-9d68-6117e771eae5}*SharedItemsImports = 13
-		ToggleButtonBar\ToggleButtonBar.projitems*{344f2617-a430-4784-a3dd-d908d63e9e30}*SharedItemsImports = 13
 		UIAtomsDemo.RestServices\UIAtomsDemo.RestServices.projitems*{1e022ff6-2609-42f9-8885-4fb90f9942ed}*SharedItemsImports = 13
-		UIAtomsDemo\UIAtomsDemo\UIAtomsDemo.projitems*{d136d210-8d15-4352-a368-212286511121}*SharedItemsImports = 13
+		ToggleButtonBar\ToggleButtonBar.projitems*{344f2617-a430-4784-a3dd-d908d63e9e30}*SharedItemsImports = 13
+		UIAtomsDemo.RestServices.Mock\UIAtomsDemo.RestServices.Mock.projitems*{5aed3eb6-7e29-4308-9d68-6117e771eae5}*SharedItemsImports = 13
+		Calendar\Calendar.projitems*{6e90f7f6-60cd-4112-bcc6-87d6a6e5d8a0}*SharedItemsImports = 4
+		Chooser\Chooser.projitems*{6e90f7f6-60cd-4112-bcc6-87d6a6e5d8a0}*SharedItemsImports = 4
+		ComboBox\ComboBox.projitems*{6e90f7f6-60cd-4112-bcc6-87d6a6e5d8a0}*SharedItemsImports = 4
+		ConfirmButton\ConfirmButton.projitems*{6e90f7f6-60cd-4112-bcc6-87d6a6e5d8a0}*SharedItemsImports = 4
+		DatePicker\DatePicker.projitems*{6e90f7f6-60cd-4112-bcc6-87d6a6e5d8a0}*SharedItemsImports = 4
+		Form\Form.projitems*{6e90f7f6-60cd-4112-bcc6-87d6a6e5d8a0}*SharedItemsImports = 4
+		GridView\GridView.projitems*{6e90f7f6-60cd-4112-bcc6-87d6a6e5d8a0}*SharedItemsImports = 4
+		ImageCropper\ImageCropper.projitems*{6e90f7f6-60cd-4112-bcc6-87d6a6e5d8a0}*SharedItemsImports = 4
+		Image\Image.projitems*{6e90f7f6-60cd-4112-bcc6-87d6a6e5d8a0}*SharedItemsImports = 4
+		ListView\ListView.projitems*{6e90f7f6-60cd-4112-bcc6-87d6a6e5d8a0}*SharedItemsImports = 4
+		ToggleButtonBar\ToggleButtonBar.projitems*{6e90f7f6-60cd-4112-bcc6-87d6a6e5d8a0}*SharedItemsImports = 4
+		ToolBar\ToolBar.projitems*{6e90f7f6-60cd-4112-bcc6-87d6a6e5d8a0}*SharedItemsImports = 4
+		UIAtomsDemo.RestServices.Mock\UIAtomsDemo.RestServices.Mock.projitems*{6e90f7f6-60cd-4112-bcc6-87d6a6e5d8a0}*SharedItemsImports = 4
+		UIAtomsDemo.RestServices\UIAtomsDemo.RestServices.projitems*{6e90f7f6-60cd-4112-bcc6-87d6a6e5d8a0}*SharedItemsImports = 4
+		UIAtomsDemo\UIAtomsDemo\UIAtomsDemo.projitems*{6e90f7f6-60cd-4112-bcc6-87d6a6e5d8a0}*SharedItemsImports = 4
 		GridView\GridView.projitems*{6f68dc67-6631-4a7a-ba7d-74f6b3073704}*SharedItemsImports = 13
+		UIAtomsDemo\UIAtomsDemo\UIAtomsDemo.projitems*{d136d210-8d15-4352-a368-212286511121}*SharedItemsImports = 13
 	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Ad-Hoc|Any CPU = Ad-Hoc|Any CPU

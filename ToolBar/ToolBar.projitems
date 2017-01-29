@@ -17,6 +17,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)CoachMarks\ToolbarItemVisibilityCoachMarks.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\ToolbarItemPopupViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModels\ToolbarItemVisibilityViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Views\ToolbarItemPopup.xaml.cs">
       <SubType>Code</SubType>

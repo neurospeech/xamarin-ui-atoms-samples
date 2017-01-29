@@ -10,6 +10,8 @@
 
                 <ns:AtomChooser
                     ns:AtomForm.Label="Youtube Video:"
+                    RowHeight="60"
+                    ShowSearch="False"
                     ItemsSource="{Binding Videos}"
                     LabelPath="Title"
                     ValuePath="ID"
@@ -18,7 +20,7 @@
                         <DataTemplate>
                             <Grid>
                                 <Grid.ColumnDefinitions>
-                                    <ColumnDefinition Width="50"/>
+                                    <ColumnDefinition Width="80"/>
                                     <ColumnDefinition/>
                                     <ColumnDefinition/>
                                 </Grid.ColumnDefinitions>
@@ -28,6 +30,7 @@
                                 </Grid.RowDefinitions>
                                 <ns:AtomImage
                                     Grid.RowSpan="2"
+                                    ShowProgress="True"
                                     Source="{Binding Thumbnail}"/>
                                 <Label
                                     Text="{Binding Title}"

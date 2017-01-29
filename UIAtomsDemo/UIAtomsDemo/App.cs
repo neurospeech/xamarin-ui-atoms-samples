@@ -12,6 +12,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using ToggleButtonBar.Views;
 using ToolBar.Views;
 using UIAtomsDemo.RestServices.Mock;
 using UIAtomsDemo.Services;
@@ -81,6 +82,7 @@ namespace UIAtomsDemo
             menuService.Add<CalendarTapCommandPage>("Calendar - TapCommand", "Calendar");
             menuService.Add<CalendarItemTemplatePage>("Calendar - ItemTemplate", "Calendar");
 
+            menuService.Add<ToggleButtonBarPage>("Toggle Button Bar","Toggle Button Bar");
 
             menuService.Add<DatePickerPage>("Date Picker", "Date Picker");
 
