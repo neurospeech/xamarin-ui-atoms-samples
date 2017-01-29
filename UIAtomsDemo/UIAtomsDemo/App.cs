@@ -5,6 +5,7 @@ using ConfirmButton.Views;
 using DatePicker.Views;
 using Form;
 using Form.Views;
+using GridView.Views;
 using Image.Views;
 using ImageCropper.Views;
 using ListView.Views;
@@ -65,6 +66,7 @@ namespace UIAtomsDemo
 
             //menuService.Add<ListViewPage>("ListView", "ListView");
             menuService.Add<ListViewMultipleSelectionPage>("ListView - Multiple Selection", "ListView");
+            menuService.Add<GridViewPage>("GridView", "ListView");
             //menuService.Add<ChooserMultipleSelectionPage>("Chooser - Multiple Selection", "Chooser");
 
 
