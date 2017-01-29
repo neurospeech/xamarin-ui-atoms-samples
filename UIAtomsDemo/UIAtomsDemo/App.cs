@@ -7,6 +7,7 @@ using Form;
 using Form.Views;
 using Image.Views;
 using ImageCropper.Views;
+using ListView.Views;
 using NeuroSpeech.UIAtoms;
 using System;
 using System.Collections.Generic;
@@ -62,6 +63,15 @@ namespace UIAtomsDemo
 
             menuService.Add<ConfirmButtonPage>("Confirm Button", "Button");
 
+            //menuService.Add<ListViewPage>("ListView", "ListView");
+            menuService.Add<ListViewMultipleSelectionPage>("ListView - Multiple Selection", "ListView");
+            //menuService.Add<ChooserMultipleSelectionPage>("Chooser - Multiple Selection", "Chooser");
+
+
+            menuService.Add<ChooserPage>("Chooser", "Chooser");
+            menuService.Add<ChooserItemTemplatePage>("Chooser - ItemTemplate", "Chooser");
+            menuService.Add<ChooserMultipleSelectionPage>("Chooser - Multiple Selection", "Chooser");
+
             //menuService.Add<SimpleComboBoxPage>("Simple ComboBox", "ComboBox");
             //menuService.Add<ComboBoxPropertyFilterPage>("Property Filter", "ComboBox");
 
@@ -69,14 +79,10 @@ namespace UIAtomsDemo
             menuService.Add<ImageFromRes>("Image from Assembly Resource", "Image");
             menuService.Add<ImageFromAppRes>("Image from Application Resource", "Image");
             menuService.Add<ImageCropperPage>("Image Cropper", "Image");
-            //menuService.Add<ImageFromWeb>("Image from Web", "Image");
+            menuService.Add<ImageFromWeb>("Image from Web", "Image");
 
             menuService.Add<ToolbarItemVisibility>("Toolbar Visibility", "Toolbar");
             menuService.Add<ToolbarItemPopup>("Toolbar Popup", "Toolbar");
-
-            menuService.Add<ChooserPage>("Chooser", "Chooser");
-            menuService.Add<ChooserItemTemplatePage>("Chooser - ItemTemplate", "Chooser");
-            menuService.Add<ChooserMultipleSelectionPage>("Chooser - Multiple Selection", "Chooser");
 
             menuService.Add<CalendarPage>("Calendar - SelectedDate", "Calendar");
             menuService.Add<CalendarTapCommandPage>("Calendar - TapCommand", "Calendar");

@@ -50,34 +50,42 @@ namespace UIAtomsDemo.Services
             };
 
             mi.Action = async () => {
-                MasterDetailPage mdp = App.Current.MainPage as MasterDetailPage;
-                if (mdp != null)
+                try
                 {
-                    mdp.Detail = await mi.GetPageAsync();
-                }
-                else {
-                    App.Current.MainPage = await mi.GetPageAsync();
-                }
-
-                Page np = await mi.GetPageAsync(); 
-                if (np is NavigationPage) {
-                    np = ((NavigationPage)np).CurrentPage;
-                }
-
-                AtomViewModel avm = np.BindingContext as AtomViewModel;
-                if (avm != null)
-                {
-                    Device.BeginInvokeOnMainThread(async () =>
+                    MasterDetailPage mdp = App.Current.MainPage as MasterDetailPage;
+                    if (mdp != null)
                     {
-                        try
+                        mdp.Detail = await mi.GetPageAsync();
+                    }
+                    else
+                    {
+                        App.Current.MainPage = await mi.GetPageAsync();
+                    }
+
+                    Page np = await mi.GetPageAsync();
+                    if (np is NavigationPage)
+                    {
+                        np = ((NavigationPage)np).CurrentPage;
+                    }
+
+                    AtomViewModel avm = np.BindingContext as AtomViewModel;
+                    if (avm != null)
+                    {
+                        Device.BeginInvokeOnMainThread(async () =>
                         {
-                            await avm.InitAsync();
-                        }
-                        catch (Exception ex)
-                        {
-                            System.Diagnostics.Debug.WriteLine(ex);
-                        }
-                    });
+                            try
+                            {
+                                await avm.InitAsync();
+                            }
+                            catch (Exception ex)
+                            {
+                                System.Diagnostics.Debug.WriteLine(ex);
+                            }
+                        });
+                    }
+                }
+                catch (Exception ex) {
+                    System.Diagnostics.Debug.Fail(ex.Message, ex.ToString());
                 }
 
             };

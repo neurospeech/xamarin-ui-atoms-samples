@@ -3,5 +3,64 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:ns="clr-namespace:NeuroSpeech.UIAtoms.Controls;assembly=NeuroSpeech.UIAtoms"
              x:Class="ListView.Views.ListViewMultipleSelectionPage">
-	<Label Text="{Binding MainText}" VerticalOptions="Center" HorizontalOptions="Center" />
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <ns:AtomNavigatorListView
+            AllowMultipleSelection="True"
+            ItemsSource="{Binding Videos}"
+            SelectedItems="{Binding SelectedVideos, Mode=OneWayToSource}">
+            <ns:AtomNavigatorListView.ItemTemplate>
+                <DataTemplate>
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="80"/>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition/>
+                            <RowDefinition Height="Auto"/>
+                        </Grid.RowDefinitions>
+                        <ns:AtomImage
+                            Grid.RowSpan="2"
+                            ShowProgress="True"
+                            Source="{Binding Thumbnail}"/>
+                        <Label
+                            Text="{Binding Title}"
+                            Grid.Column="1"/>
+                        <Label
+                            Text="{Binding Views, StringFormat='({0})'}"
+                            Grid.Column="2"/>
+
+                        <Label
+                            Text="{Binding UpVotes, StringFormat='Up {0}'}"
+                            Grid.Column="1"
+                            Grid.Row="1"/>
+                        <Label
+                            Text="{Binding DownVotes, StringFormat='Down {0}'}"
+                            Grid.Column="2"
+                            Grid.Row="1"/>
+
+                    </Grid>
+                </DataTemplate>
+            </ns:AtomNavigatorListView.ItemTemplate>
+        </ns:AtomNavigatorListView>
+
+
+        <ns:AtomRepeator 
+            Grid.Row="1"
+            ItemsSource="{Binding SelectedVideos}">
+            <ns:AtomRepeator.ItemTemplate>
+                <DataTemplate>
+                    <ns:AtomImage
+                        Source="{Binding Thumbnail}"
+                        />
+                </DataTemplate>
+            </ns:AtomRepeator.ItemTemplate>
+        </ns:AtomRepeator>
+        
+    </Grid>
 </ContentPage>
