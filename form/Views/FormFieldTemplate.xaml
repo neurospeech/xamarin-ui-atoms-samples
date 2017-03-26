@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:ns="clr-namespace:NeuroSpeech.UIAtoms.Controls;assembly=NeuroSpeech.UIAtoms"
+             x:Class="Form.Views.FormFieldTemplate"
+             BackgroundColor="Black"
+             Title="Form Template">
+    
+    <ns:AtomForm>
+        <ns:AtomForm.FieldStyle>
+            <ControlTemplate>
+                
+                <!-- AtomFieldGrid is derived from simple Grid -->
+                <!-- ContentRow, ConentColumn, ContentRowSpan, ContentColumnSpan will decide where -->
+                <!-- content will appear in this grid, and other items can be arranged using -->
+                <!-- explicit grid properties -->
+                
+                <!-- The reason we don't use ContentView and ContentTemplate is, ContentView is very slow  -->
+                <!-- to render as it has many levels of nested runtime views which slows down performance -->
+                
+                <ns:AtomFieldGrid
+				        Padding="5"
+                        ContentRow="0"
+                        ContentColumn="0"
+                        RowSpacing="5">
+                    
+                    <ns:AtomFieldGrid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                    </ns:AtomFieldGrid.RowDefinitions>
+                    
+                    <Label Grid.Row="1" 
+                           Text="{Binding Error}"
+                           IsVisible="{Binding Error, Converter={x:Static ns:StringToVisibilityConverter.Instance}}"
+                           TextColor="White"
+                           BackgroundColor="Red"
+                           HorizontalOptions="Fill"
+                           HorizontalTextAlignment="Start"/>
+                    
+                    <Label Grid.Row="2" 
+                           Text="{Binding Description}"
+                           IsVisible="{Binding Description, Converter={x:Static ns:StringToVisibilityConverter.Instance}}"
+                           TextColor="White"
+                           HorizontalOptions="Start"
+                           HorizontalTextAlignment="Start"
+                           FontSize="Small"
+                           />
+                </ns:AtomFieldGrid>
+            </ControlTemplate>
+        </ns:AtomForm.FieldStyle>
+        
+        <ns:AtomFieldGroup>
+
+            <ns:AtomTextBox
+                    ns:AtomForm.IsRequired="true"
+                    ns:AtomForm.Description="Username is not email address"
+                    DisableSuggestions="True"
+                    Placeholder="Username"
+                    PlaceholderColor="White"
+                    Text="{Binding Username}"
+                    TextColor="White"
+                    BackgroundColor="Transparent"
+                    HorizontalTextAlignment="Center">
+                <ns:AtomTextBox.Effects>
+                    <ns:AtomRoundBorderEffect BackgroundColor="Transparent" StrokeColor="White"/>
+                </ns:AtomTextBox.Effects>
+            </ns:AtomTextBox>
+
+            <ns:AtomTextBox
+                    ns:AtomForm.IsRequired="true"
+                        Placeholder="Password"
+                        IsPassword="True"
+                        PlaceholderColor="White"
+                        Text="{Binding Password}"
+                        TextColor="White"
+                        BackgroundColor="Transparent"
+                        HorizontalTextAlignment="Center"
+					                >
+                <ns:AtomTextBox.Effects>
+                    <ns:AtomRoundBorderEffect BackgroundColor="Transparent"  StrokeColor="White"/>
+                </ns:AtomTextBox.Effects>
+
+            </ns:AtomTextBox>
+
+            <ns:AtomSubmitButton
+                            Text="Login"
+                            HeightRequest="50"
+                            TextColor="White"
+                            BackgroundColor="#FF6D00"
+                            />
+
+        </ns:AtomFieldGroup>
+    </ns:AtomForm>
+</ContentPage>

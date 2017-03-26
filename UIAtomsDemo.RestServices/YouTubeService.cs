@@ -13,7 +13,7 @@ namespace UIAtomsDemo.RestServices
     public class YouTubeService : BaseService
     {
 
-        public virtual async Task<IEnumerable<YouTubeVideo>> GetVideos() {
+        public virtual Task<IEnumerable<YouTubeVideo>> GetVideos() {
             throw new NotImplementedException();
         }
 

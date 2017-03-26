@@ -18,8 +18,7 @@ namespace ComboBox.ViewModels
         public override async Task InitAsync()
         {
             var list = await Get<ConfigService>().GetPersonListAsync();
-            PersonList.Clear();
-            PersonList.AddRange(list);
+            PersonList.Replace(list);
         }
 
     }

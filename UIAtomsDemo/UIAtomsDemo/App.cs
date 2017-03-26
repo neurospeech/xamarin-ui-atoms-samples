@@ -61,6 +61,7 @@ namespace UIAtomsDemo
 
             menuService.Add<SimpleFormPage>("Simple Form","Form");
             menuService.Add<SimpleValidationPage>("Simple Validation", "Form");
+            menuService.Add<FormFieldTemplate>("Custom Field Template", "Form");
 
             menuService.Add<ConfirmButtonPage>("Confirm Button", "Button");
 
