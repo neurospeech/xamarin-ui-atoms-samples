@@ -5,8 +5,18 @@
              x:Class="DatePicker.Views.DatePickerPage">
     <Grid>
         <ns:AtomForm HideSingleGroup="False">
+            
+            
+            
             <ns:AtomFieldGroup Category="Date Picker">
+                
+                
+                
+                
 
+                <Label
+                    Text="Date Picker is nullable, clicking cross button will set Value to null"
+                    />
 
                 <ns:AtomDatePicker 
                     ns:AtomForm.Label="Date:"

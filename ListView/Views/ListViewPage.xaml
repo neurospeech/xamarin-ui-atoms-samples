@@ -10,7 +10,7 @@
         </Grid.RowDefinitions>
         <ns:AtomListView 
             ItemsSource="{Binding Videos}"
-            SelectedItems="{Binding SelectedVideos,Mode=TwoWay}">
+            SelectedItem="{Binding SelectedVideo,Mode=TwoWay}">
             <ns:AtomListView.ItemTemplate>
                 <DataTemplate>
                     <Grid>
@@ -48,5 +48,10 @@
 
             </ns:AtomListView.ItemTemplate>
         </ns:AtomListView>
+
+        <Label
+            Grid.Row="1"
+            Text="{Binding SelectedVideo.Title}"
+            />
     </Grid>
 </ContentPage>

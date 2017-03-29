@@ -65,7 +65,7 @@ namespace UIAtomsDemo
 
             menuService.Add<ConfirmButtonPage>("Confirm Button", "Button");
 
-            //menuService.Add<ListViewPage>("ListView", "ListView");
+            menuService.Add<ListViewPage>("ListView", "ListView");
             menuService.Add<ListViewMultipleSelectionPage>("ListView - Multiple Selection", "ListView");
             menuService.Add<GridViewPage>("GridView", "ListView");
             //menuService.Add<ChooserMultipleSelectionPage>("Chooser - Multiple Selection", "Chooser");

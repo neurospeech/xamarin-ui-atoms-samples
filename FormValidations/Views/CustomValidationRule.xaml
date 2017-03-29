@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:ns="clr-namespace:NeuroSpeech.UIAtoms.Controls;assembly=NeuroSpeech.UIAtoms"
+             xmlns:local="clr-namespace:UIAtomsDemo"
+             x:Class="FormValidations.Views.CustomValidationRule">
+
+    <ContentPage.Resources>
+        <local:CustomDateValidationRule x:Key="customRule" />
+    </ContentPage.Resources>
+    
+    <ns:AtomForm HideSingleGroup="False">
+        <ns:AtomFieldGroup Category="Custom Validation">
+            
+            
+            <ns:AtomDatePicker>
+                <ns:AtomForm.Validator>
+                    <ns:AtomPropertyValidator Property="Value" ValidationRule="{StaticResource customRule}"/>
+                </ns:AtomForm.Validator>
+            </ns:AtomDatePicker>
+
+            <ns:AtomSubmitButton/>
+        </ns:AtomFieldGroup>
+    </ns:AtomForm>
+</ContentPage>

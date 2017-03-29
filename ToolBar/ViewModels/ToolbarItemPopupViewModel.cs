@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Threading.Tasks;
 
 namespace ToolBar.ViewModels
 {
@@ -10,7 +11,9 @@ namespace ToolBar.ViewModels
 
         public ToolbarItemPopupViewModel()
         {
-            this.SearchCommand = new AtomCommand(() => { });
+            this.SearchCommand = new AtomCommand(() => {
+                return Task.CompletedTask;
+            });
         }
 
         public AtomCommand SearchCommand { get; private set; }
