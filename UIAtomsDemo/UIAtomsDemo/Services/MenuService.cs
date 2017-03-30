@@ -235,7 +235,7 @@ namespace UIAtomsDemo.Services
             }
             catch (Exception ex) {
                 System.Diagnostics.Debug.WriteLine(ex);
-                DependencyService.Get<INotificationService>().Notify(ex.Message);
+                DependencyService.Get<INotificationService>().NotifyAsync(ex.Message);
             }
         }
 

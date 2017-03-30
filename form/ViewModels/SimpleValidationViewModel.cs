@@ -19,7 +19,7 @@ namespace Form.ViewModels
         private async Task OnSubmitCommandAsync()
         {
             await Task.Delay(100);
-            Get<INotificationService>().Notify("Submitted");
+            await Get<INotificationService>().NotifyAsync("Submitted");
         }
 
         public AtomCommand SubmitCommand { get; private set; }

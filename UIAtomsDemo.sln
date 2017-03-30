@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26228.9
+VisualStudioVersion = 15.0.26228.10
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UIAtomsDemo.Droid", "UIAtomsDemo\UIAtomsDemo.Droid\UIAtomsDemo.Droid.csproj", "{6E90F7F6-60CD-4112-BCC6-87D6A6E5D8A0}"
 EndProject
@@ -40,6 +40,11 @@ EndProject
 Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "MVVM", "MVVM\MVVM.shproj", "{4292194A-181D-405B-9997-667EA91CAB88}"
 EndProject
 Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "FormValidations", "FormValidations\FormValidations.shproj", "{BB86B848-1011-4872-9717-0621E0A52C5E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{960494E0-B6C1-4359-988D-05D0BCE27EB9}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution

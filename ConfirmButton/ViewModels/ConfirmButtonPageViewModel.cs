@@ -20,8 +20,7 @@ namespace ConfirmButton.ViewModels
 
         private Task OnDeleteCommandAsync()
         {
-            Get<INotificationService>().Notify("Deleted successfully");
-            return Task.CompletedTask;
+            return Get<INotificationService>().NotifyAsync("Deleted successfully");
         }
     }
 }
