@@ -4,23 +4,21 @@
              xmlns:ns="clr-namespace:NeuroSpeech.UIAtoms.Controls;assembly=NeuroSpeech.UIAtoms"
              xmlns:nsv="clr-namespace:NeuroSpeech.UIAtoms.Validation;assembly=NeuroSpeech.UIAtoms"
              xmlns:local="clr-namespace:UIAtomsDemo"
-             x:Class="FormValidations.Views.CustomValidationRule">
+             x:Class="FormValidations.Views.CustomValidationRulePage">
 
-    <ContentPage.Resources>
-        <local:CustomDateValidationRule x:Key="customRule" />
-    </ContentPage.Resources>
-    
     <ns:AtomForm HideSingleGroup="False">
         <ns:AtomFieldGroup Category="Custom Validation">
             
             
-            <ns:AtomDatePicker>
+            <ns:AtomDatePicker 
+                ns:AtomForm.Label="Birth Date"
+                ns:AtomForm.IsRequired="True">
                 <ns:AtomForm.Validator>
-                    <nsv:AtomPropertyValidator Property="Value" ValidationRule="{StaticResource customRule}"/>
+                    <nsv:AtomPropertyValidator Property="Value" ValidationRule="{local:CustomDateValidationRule}"/>
                 </ns:AtomForm.Validator>
             </ns:AtomDatePicker>
 
-            <ns:AtomSubmitButton/>
+            <ns:AtomSubmitButton Text="Submit"/>
         </ns:AtomFieldGroup>
     </ns:AtomForm>
 </ContentPage>

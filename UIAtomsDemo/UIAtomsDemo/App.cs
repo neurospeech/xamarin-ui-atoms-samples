@@ -5,6 +5,7 @@ using ConfirmButton.Views;
 using DatePicker.Views;
 using Form;
 using Form.Views;
+using FormValidations.Views;
 using GridView.Views;
 using Image.Views;
 using ImageCropper.Views;
@@ -62,6 +63,7 @@ namespace UIAtomsDemo
             menuService.Add<SimpleFormPage>("Simple Form","Form");
             menuService.Add<SimpleValidationPage>("Simple Validation", "Form");
             menuService.Add<FormFieldTemplate>("Custom Field Template", "Form");
+            menuService.Add<CustomValidationRulePage>("Third Party Validator", "Form");
 
             menuService.Add<ConfirmButtonPage>("Confirm Button", "Button");
 
