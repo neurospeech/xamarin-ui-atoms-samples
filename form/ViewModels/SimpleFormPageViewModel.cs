@@ -9,10 +9,10 @@ using NeuroSpeech.UIAtoms.DI;
 
 namespace Form.ViewModels
 {
-    public class SimpleFormViewModel : BaseViewModel
+    public class SimpleFormPageViewModel : BaseViewModel
     {
 
-        public SimpleFormViewModel()
+        public SimpleFormPageViewModel()
         {
             this.SubmitCommand = new AtomCommand(async ()=> await OnSubmitCommandAsync());
         }

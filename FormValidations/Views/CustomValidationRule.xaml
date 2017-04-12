@@ -2,6 +2,7 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:ns="clr-namespace:NeuroSpeech.UIAtoms.Controls;assembly=NeuroSpeech.UIAtoms"
+             xmlns:nsv="clr-namespace:NeuroSpeech.UIAtoms.Validation;assembly=NeuroSpeech.UIAtoms"
              xmlns:local="clr-namespace:UIAtomsDemo"
              x:Class="FormValidations.Views.CustomValidationRule">
 
@@ -15,7 +16,7 @@
             
             <ns:AtomDatePicker>
                 <ns:AtomForm.Validator>
-                    <ns:AtomPropertyValidator Property="Value" ValidationRule="{StaticResource customRule}"/>
+                    <nsv:AtomPropertyValidator Property="Value" ValidationRule="{StaticResource customRule}"/>
                 </ns:AtomForm.Validator>
             </ns:AtomDatePicker>
 

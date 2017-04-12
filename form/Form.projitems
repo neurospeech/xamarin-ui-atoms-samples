@@ -20,7 +20,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="$(MSBuildThisFileDirectory)ViewModels\CustomFieldPageViewModel.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\SimpleFormViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\SimpleFormPageViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModels\SimpleValidationViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Views\CustomFieldPage.xaml.cs">
       <SubType>Code</SubType>
