@@ -3,14 +3,23 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:ns="clr-namespace:NeuroSpeech.UIAtoms.Controls;assembly=NeuroSpeech.UIAtoms"
              x:Class="ConfirmButton.Views.ConfirmButtonPage">
-  <Grid>
-    <ns:AtomButton
-      Confirm="True"
-      Command="{Binding DeleteCommand}"
-      ConfirmMessage="Are you sure you want to delete this?"
-      ConfirmTitle="Confirm Delete"
-      ConfirmButtonText="Yes"
-      CancelButtonText="No"
-      Text="Delete"/>
-  </Grid>
+  <StackLayout Orientation="Vertical">
+
+        <Label Text="Purpose of AtomButton is to provide a confirmation before executing action"/>
+
+        <Label Text="Since each properties are bindable, it is easy to provide bind language specific messages"/>
+
+        <ns:AtomButton
+            Confirm="True"
+            Command="{Binding DeleteCommand}"
+            ConfirmMessage="Are you sure you want to delete this?"
+            ConfirmTitle="Confirm Delete"
+            ConfirmButtonText="Yes"
+            CancelButtonText="No"
+            Text="Delete"
+            HorizontalOptions="Center"
+            VerticalOptions="Center"/>
+      
+  </StackLayout>
+    
 </ContentPage>

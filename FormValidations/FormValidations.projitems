@@ -12,13 +12,13 @@
     <Folder Include="$(MSBuildThisFileDirectory)ViewModels\" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\CustomValidationRule.xaml">
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\CustomValidationRulePage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="$(MSBuildThisFileDirectory)CustomDateValidationRule.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Views\CustomValidationRule.xaml.cs">
+    <Compile Include="$(MSBuildThisFileDirectory)Views\CustomValidationRulePage.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>

@@ -10,9 +10,9 @@ using Xamarin.Forms.Xaml;
 namespace FormValidations.Views
 {
 	[XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class CustomValidationRule : ContentPage
+	public partial class CustomValidationRulePage : ContentPage
 	{
-		public CustomValidationRule ()
+		public CustomValidationRulePage ()
 		{
 			InitializeComponent ();
 		}
