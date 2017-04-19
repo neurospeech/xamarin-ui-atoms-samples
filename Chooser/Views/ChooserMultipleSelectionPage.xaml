@@ -3,7 +3,7 @@
 			 xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
 			 xmlns:ns="clr-namespace:NeuroSpeech.UIAtoms.Controls;assembly=NeuroSpeech.UIAtoms"
 			 x:Class="Chooser.Views.ChooserMultipleSelectionPage">
-    <Grid>
+    <Grid Padding="10">
         <ns:AtomForm>
             <ns:AtomFieldGroup>
 
@@ -16,6 +16,7 @@
                     ItemsSource="{Binding Videos}"
                     LabelPath="Title"
                     ValuePath="ID"
+                    RowHeight="60"
                     ValueSeparator=", "
                     Value="{Binding SelectedVideoIDs, Mode=TwoWay}"
                     TapCommand="{Binding TapCommand}"
@@ -23,11 +24,10 @@
 
                 <Label
                     ns:AtomForm.Label="Selected Video ID:"
-                    Text="{Binding SelectedVideoIDs}"
-                    />
+                    Text="{Binding SelectedVideoIDs}" />
 
                 <ns:AtomRepeator 
-                    ns:AtomForm.Label="SelectedItems Binding:"
+                    ns:AtomForm.Label="Selected Items Binding:"
                     ItemsSource="{Binding SelectedItems,Source={x:Reference chooser}}">
                     <ns:AtomRepeator.ItemTemplate>
                         <DataTemplate>

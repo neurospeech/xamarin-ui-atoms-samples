@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.26228.9
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UIAtomsDemo.Droid", "UIAtomsDemo\UIAtomsDemo.Droid\UIAtomsDemo.Droid.csproj", "{6E90F7F6-60CD-4112-BCC6-87D6A6E5D8A0}"
 EndProject
@@ -40,6 +40,10 @@ Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "ListView", "ListView\ListVi
 EndProject
 Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "ToolBar", "ToolBar\ToolBar.shproj", "{3FA58286-46C4-41C3-99D1-2E12FEEDA66E}"
 EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "FormValidations", "FormValidations\FormValidations.shproj", "{BB86B848-1011-4872-9717-0621E0A52C5E}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "MVVM", "MVVM\MVVM.shproj", "{4292194A-181D-405B-9997-667EA91CAB88}"
+EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
 		Form\Form.projitems*{08d8e865-ee8c-49a0-bd6c-3faa8154bf9d}*SharedItemsImports = 13
@@ -49,6 +53,7 @@ Global
 		ConfirmButton\ConfirmButton.projitems*{25754ec6-4bd5-45a7-ad64-6b8c74e72794}*SharedItemsImports = 13
 		ToggleButtonBar\ToggleButtonBar.projitems*{344f2617-a430-4784-a3dd-d908d63e9e30}*SharedItemsImports = 13
 		ToolBar\ToolBar.projitems*{3fa58286-46c4-41c3-99d1-2e12feeda66e}*SharedItemsImports = 13
+		MVVM\MVVM.projitems*{4292194a-181d-405b-9997-667ea91cab88}*SharedItemsImports = 13
 		UIAtomsDemo.RestServices.Mock\UIAtomsDemo.RestServices.Mock.projitems*{5aed3eb6-7e29-4308-9d68-6117e771eae5}*SharedItemsImports = 13
 		Calendar\Calendar.projitems*{6ac0ec9d-ccb3-4701-8baf-a12a535d5915}*SharedItemsImports = 13
 		Calendar\Calendar.projitems*{6e90f7f6-60cd-4112-bcc6-87d6a6e5d8a0}*SharedItemsImports = 4
@@ -56,17 +61,20 @@ Global
 		ComboBox\ComboBox.projitems*{6e90f7f6-60cd-4112-bcc6-87d6a6e5d8a0}*SharedItemsImports = 4
 		ConfirmButton\ConfirmButton.projitems*{6e90f7f6-60cd-4112-bcc6-87d6a6e5d8a0}*SharedItemsImports = 4
 		DatePicker\DatePicker.projitems*{6e90f7f6-60cd-4112-bcc6-87d6a6e5d8a0}*SharedItemsImports = 4
+		FormValidations\FormValidations.projitems*{6e90f7f6-60cd-4112-bcc6-87d6a6e5d8a0}*SharedItemsImports = 4
 		Form\Form.projitems*{6e90f7f6-60cd-4112-bcc6-87d6a6e5d8a0}*SharedItemsImports = 4
 		GridView\GridView.projitems*{6e90f7f6-60cd-4112-bcc6-87d6a6e5d8a0}*SharedItemsImports = 4
 		ImageCropper\ImageCropper.projitems*{6e90f7f6-60cd-4112-bcc6-87d6a6e5d8a0}*SharedItemsImports = 4
 		Image\Image.projitems*{6e90f7f6-60cd-4112-bcc6-87d6a6e5d8a0}*SharedItemsImports = 4
 		ListView\ListView.projitems*{6e90f7f6-60cd-4112-bcc6-87d6a6e5d8a0}*SharedItemsImports = 4
+		MVVM\MVVM.projitems*{6e90f7f6-60cd-4112-bcc6-87d6a6e5d8a0}*SharedItemsImports = 4
 		ToggleButtonBar\ToggleButtonBar.projitems*{6e90f7f6-60cd-4112-bcc6-87d6a6e5d8a0}*SharedItemsImports = 4
 		ToolBar\ToolBar.projitems*{6e90f7f6-60cd-4112-bcc6-87d6a6e5d8a0}*SharedItemsImports = 4
 		UIAtomsDemo.RestServices.Mock\UIAtomsDemo.RestServices.Mock.projitems*{6e90f7f6-60cd-4112-bcc6-87d6a6e5d8a0}*SharedItemsImports = 4
 		UIAtomsDemo.RestServices\UIAtomsDemo.RestServices.projitems*{6e90f7f6-60cd-4112-bcc6-87d6a6e5d8a0}*SharedItemsImports = 4
 		UIAtomsDemo\UIAtomsDemo\UIAtomsDemo.projitems*{6e90f7f6-60cd-4112-bcc6-87d6a6e5d8a0}*SharedItemsImports = 4
 		GridView\GridView.projitems*{6f68dc67-6631-4a7a-ba7d-74f6b3073704}*SharedItemsImports = 13
+		FormValidations\FormValidations.projitems*{bb86b848-1011-4872-9717-0621e0a52c5e}*SharedItemsImports = 13
 		DatePicker\DatePicker.projitems*{c0cd688e-3bf1-48e8-bb2e-2072959e44d3}*SharedItemsImports = 13
 		UIAtomsDemo\UIAtomsDemo\UIAtomsDemo.projitems*{d136d210-8d15-4352-a368-212286511121}*SharedItemsImports = 13
 		ListView\ListView.projitems*{dcba9a12-6e88-4d41-8e63-d0a1b1ceffa0}*SharedItemsImports = 13

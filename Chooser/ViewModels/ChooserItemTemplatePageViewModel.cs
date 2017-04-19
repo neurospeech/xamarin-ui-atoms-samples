@@ -24,8 +24,21 @@ namespace Chooser.ViewModels
         }
 
 
+        #region Property SelectedVideoID
 
+        private string _SelectedVideoID = null;
 
-
+        public string SelectedVideoID
+        {
+            get
+            {
+                return _SelectedVideoID;
+            }
+            set
+            {
+                SetProperty(ref _SelectedVideoID, value);
+            }
+        }
+        #endregion
     }
 }

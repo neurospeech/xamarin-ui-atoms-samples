@@ -3,16 +3,13 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:ns="clr-namespace:NeuroSpeech.UIAtoms.Controls;assembly=NeuroSpeech.UIAtoms"
              x:Class="Image.Views.ImageFromAppRes">
-    <StackLayout Orientation="Vertical">
+    <StackLayout Orientation="Vertical" Padding="10">
 
-        <Label 
-            Margin="5" 
-            Text="Image has to be embedded in Application assembly"/>
+        <Label Text="Image has to be embedded in Application assembly" 
+               HorizontalOptions="CenterAndExpand"
+               TextColor="Blue"/>
 
-        <ns:AtomImage
-            Margin="5"
-            Source="app-res:///AppImages/Milkyway.jpg"
-            />
+        <ns:AtomImage Source="app-res:///AppImages/Milkyway.jpg"/>
         
     </StackLayout>
 </ContentPage>

@@ -3,7 +3,21 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              Title="Home"
              x:Class="UIAtomsDemo.Views.HomePage">
-    <StackLayout Orientation="Vertical">
-        <Label Text="Open the drawer to select sample"/>
+    <StackLayout Padding="20">
+    <Label Text="UI ATOMS XF"
+           TextColor="Red"
+           FontSize="50"
+           HorizontalOptions="Center"/>
+   <StackLayout VerticalOptions="Center" HorizontalOptions="CenterAndExpand" Padding="0,100">
+    <Label Text="WELCOME !"
+           TextColor="Red"
+           FontSize="30"
+           HorizontalOptions="Center"/>
+    <Label Text="Open the drawer to select sample"
+           HorizontalOptions="Center"
+           TextColor="Black"/>
     </StackLayout>
+    </StackLayout>
+    
+    
 </ContentPage>

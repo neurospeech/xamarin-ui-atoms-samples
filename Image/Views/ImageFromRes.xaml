@@ -3,16 +3,13 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:ns="clr-namespace:NeuroSpeech.UIAtoms.Controls;assembly=NeuroSpeech.UIAtoms"
              x:Class="Image.Views.ImageFromRes">
-    <StackLayout Orientation="Vertical">
+    <StackLayout Orientation="Vertical" Padding="10">
 
-        <Label 
-            Margin="5" 
-            Text="Host name should be name of assembly and path to embedded resource"/>
+        <Label Text="Host name should be name of assembly and path to embedded resource"
+               HorizontalOptions="CenterAndExpand"
+               TextColor="Blue"/>
 
-        <ns:AtomImage
-            Margin="5"
-            Source="res://NeuroSpeech.UIAtoms/Images.DropDownImage.png"
-            />
+        <ns:AtomImage Source="res://NeuroSpeech.UIAtoms/Images.DropDownImage.png"/>
 
     </StackLayout>
 </ContentPage>

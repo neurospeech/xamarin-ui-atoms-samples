@@ -8,7 +8,7 @@
   
   <!-- Submit Command -->
   
-  <ns:AtomForm SubmitCommand="{Binding SubmitCommand}">
+  <ns:AtomForm SubmitCommand="{Binding SubmitCommand}" Padding="10">
 
     <!-- Displays Header -->
     <ns:AtomFieldGroup
@@ -22,15 +22,13 @@
       <!--  Display red asterix   -->
       <ns:AtomTextBox
         ns:AtomForm.Label="Last Name:"
-        ns:AtomForm.IsRequired="true"
-        />
+        ns:AtomForm.IsRequired="true"/>
 
 
       <!--  Display description at bottom  -->
       <ns:AtomTextBox
         ns:AtomForm.Label="Company Name:"
-        ns:AtomForm.Description="Enter your current or last employment"
-        />
+        ns:AtomForm.Description="(Enter your current or last employment)"/>
 
       <ns:AtomSubmitButton Text="Submit"/>
 

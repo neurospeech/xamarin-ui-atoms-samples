@@ -11,10 +11,12 @@
             Command="{Binding OptionCommand}"></ns:AtomToolbarItem>
     </ContentPage.ToolbarItems>
     
-    <Grid>
-        <StackLayout Orientation="Horizontal">
-            <Label Text="Show Toolbar Item"/>
-            <Switch IsToggled="{Binding ShowOption}"/>
-        </StackLayout>
-    </Grid>
+  <StackLayout Padding="10">
+            <Label Text="Show Toolbar Item" 
+                   TextColor="Blue" 
+                   FontSize="14"
+                   HorizontalOptions="CenterAndExpand"/>
+            <Switch IsToggled="{Binding ShowOption}"
+                    HorizontalOptions="CenterAndExpand"/>
+  </StackLayout>
 </ContentPage>

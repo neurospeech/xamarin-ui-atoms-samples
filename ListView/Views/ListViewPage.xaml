@@ -3,14 +3,15 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:ns="clr-namespace:NeuroSpeech.UIAtoms.Controls;assembly=NeuroSpeech.UIAtoms"
              x:Class="ListView.Views.ListViewPage">
-    <Grid>
+    <Grid Padding="10">
         <Grid.RowDefinitions>
             <RowDefinition/>
             <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
         <ns:AtomListView 
             ItemsSource="{Binding Videos}"
-            SelectedItem="{Binding SelectedVideo,Mode=TwoWay}">
+            SelectedItem="{Binding SelectedVideo,Mode=TwoWay}"
+            RowHeight="60">
             <ns:AtomListView.ItemTemplate>
                 <DataTemplate>
                     <Grid>
@@ -52,6 +53,6 @@
         <Label
             Grid.Row="1"
             Text="{Binding SelectedVideo.Title}"
-            />
+            Margin="10"/>
     </Grid>
 </ContentPage>

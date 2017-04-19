@@ -3,20 +3,15 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:ns="clr-namespace:NeuroSpeech.UIAtoms.Controls;assembly=NeuroSpeech.UIAtoms"
              x:Class="DatePicker.Views.DatePickerPage">
-    <Grid>
+    <Grid Padding="10">
         <ns:AtomForm HideSingleGroup="False">
-            
-            
             
             <ns:AtomFieldGroup Category="Date Picker">
                 
-                
-                
-                
-
-                <Label
-                    Text="Date Picker is nullable, clicking cross button will set Value to null"
-                    />
+                <Label Text="Date Picker is nullable, clicking cross button will set Value to null"
+                       TextColor="Blue"
+                       FontSize="14"
+                       HorizontalOptions="CenterAndExpand"/>
 
                 <ns:AtomDatePicker 
                     ns:AtomForm.Label="Date:"
