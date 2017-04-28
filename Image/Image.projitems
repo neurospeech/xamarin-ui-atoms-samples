@@ -57,4 +57,7 @@
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)AppImages\SolarFlare.jpg" />
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)AppImages\SpaceShuttle.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="$(MSBuildThisFileDirectory)README.md" />
+  </ItemGroup>
 </Project>
