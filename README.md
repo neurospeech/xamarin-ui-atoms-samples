@@ -19,7 +19,7 @@ UI Atoms Samples repository contains samples of usage scenarios of all controls 
 
 # Controls
 
-1. [AtomForm](Form/README.md)
+1. [AtomForm](form/README.md)
     * Field grouping
     * Field search for large forms
     * Simple Validations
