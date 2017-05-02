@@ -2,7 +2,7 @@
 AtomDatePicker control is an alternative for Calendar in Xamarin.Forms projects.
 
 ## Screenshot
-![Date-Picker-1](Images/Date-Picker-1.png){:height="300px" width="250px"}  ![Date-Picker-2](Images/Date-Picker-2.png){:height="300px" width="250px"}  ![Date-Picker-3](Images/Date-Picker-3.png){:height="300px" width="250px"}
+![Date-Picker-1](Images/Date-Picker-1.png)  ![Date-Picker-2](Images/Date-Picker-2.png)  ![Date-Picker-3](Images/Date-Picker-3.png)
 
 ## Features
 * Customize look for Calendar by showing in Popup view.

@@ -3,7 +3,7 @@ AtomButton is used to provide a alert before saving changes.
 Since each properties are bindable, it is easy to provide bind language specific messages.
 
 ## Screenshot
-![Confirm-Button-1](Images/Confirm-Button-1.png){:height="300px" width="250px"}  ![Confirm-Button-2](Images/Confirm-Button-2.png){:height="300px" width="250px"}  ![Confirm-Button-3](Images/Confirm-Button-3.png){:height="300px" width="250px"}
+![Confirm-Button-1](Images/Confirm-Button-1.png)  ![Confirm-Button-2](Images/Confirm-Button-2.png)  ![Confirm-Button-3](Images/Confirm-Button-3.png)
 
 ## Usage
 

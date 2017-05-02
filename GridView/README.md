@@ -2,7 +2,7 @@
 AtomGridView is a control that displays items in a two-dimensional grid for Xamarin.Forms projects.
 
 ## Screenshot
-![GridView](Images/GridView.png){:height="300px" width="250px"}
+![GridView](Images/GridView.png)
 
 ## Features
   * Grid view with header support.
