@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:ns="clr-namespace:NeuroSpeech.UIAtoms.Controls;assembly=NeuroSpeech.UIAtoms"
              x:Class="GridView.Views.GridViewPage">
-    <ns:AtomGridView ItemsSource="{Binding Videos}">
+    <ns:AtomGridView ItemsSource="{Binding Videos}" Padding="10">
         <ns:AtomGridView.ItemTemplate>
             <DataTemplate>
                     <ns:AtomImage

@@ -3,11 +3,15 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:ns="clr-namespace:NeuroSpeech.UIAtoms.Controls;assembly=NeuroSpeech.UIAtoms"
              x:Class="ConfirmButton.Views.ConfirmButtonPage">
-  <StackLayout Orientation="Vertical">
+  <StackLayout Padding="10">
 
-        <Label Text="Purpose of AtomButton is to provide a confirmation before executing action"/>
+        <Label Text="Purpose of AtomButton is to provide a confirmation before executing action" 
+               TextColor="Blue" 
+               FontSize="14"/>
 
-        <Label Text="Since each properties are bindable, it is easy to provide bind language specific messages"/>
+        <Label Text="Since each properties are bindable, it is easy to provide bind language specific messages" 
+               TextColor="Blue"
+               FontSize="14"/>
 
         <ns:AtomButton
             Confirm="True"
@@ -17,7 +21,7 @@
             ConfirmButtonText="Yes"
             CancelButtonText="No"
             Text="Delete"
-            HorizontalOptions="Center"
+            HorizontalOptions="CenterAndExpand"
             VerticalOptions="Center"/>
       
   </StackLayout>

@@ -5,7 +5,7 @@
   xmlns:ns="clr-namespace:NeuroSpeech.UIAtoms.Controls;assembly=NeuroSpeech.UIAtoms"
   Title="Login Page"
   x:Class="Form.Views.SimpleFormPage">
-  <ns:AtomForm SubmitCommand="{Binding SubmitCommand}">
+  <ns:AtomForm SubmitCommand="{Binding SubmitCommand}" Padding="10">
 
     <!-- Displays Header -->
     <ns:AtomFieldGroup
@@ -15,23 +15,21 @@
       <Entry
         ns:AtomForm.Label="First Name:"/>
 
-      <Label Text="Following field just displays a red asterix, it does not do any validation"/>
-      <Label Text="Check Simple Validations for more details on how to use AtomTextBox with validation"/>
+      <Label Text="Following field just displays a red asterix, it does not do any validation" TextColor="Blue" FontSize="14"/>
+      <Label Text="Check Simple Validations for more details on how to use AtomTextBox with validation" TextColor="Blue" FontSize="14"/>
 
             <!--  Display red asterix   -->
         <!--  This will not check for errors, use AtomTextBox for automatic validation errors   -->
         <Entry
             ns:AtomForm.Label="Last Name:"
-            ns:AtomForm.IsRequired="true"
-            />
+            ns:AtomForm.IsRequired="true"/>
         
 
 
       <!--  Display description at bottom  -->
       <Entry
         ns:AtomForm.Label="Company Name:"
-        ns:AtomForm.Description="Enter your current or last employment"
-        />
+        ns:AtomForm.Description="(Enter your current or last employment)"/>
 
       <ns:AtomSubmitButton Text="Submit"/>
 

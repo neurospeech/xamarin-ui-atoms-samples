@@ -3,11 +3,9 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:ns="clr-namespace:NeuroSpeech.UIAtoms.Controls;assembly=NeuroSpeech.UIAtoms"
              x:Class="Chooser.Views.ChooserItemTemplatePage">
-    <Grid>
+    <Grid Padding="10">
         <ns:AtomForm>
             <ns:AtomFieldGroup>
-
-
                 <ns:AtomChooser
                     ns:AtomForm.Label="Youtube Video:"
                     RowHeight="60"
@@ -59,8 +57,7 @@
 
                 <Label
                     ns:AtomForm.Label="Selected Video ID:"
-                    Text="{Binding SelectedVideoID}"
-                    />
+                    Text="{Binding SelectedVideoID}"/>
             </ns:AtomFieldGroup>
         </ns:AtomForm>
     </Grid>

@@ -19,43 +19,47 @@ UI Atoms Samples repository contains samples of usage scenarios of all controls 
 
 # Controls
 
-1. AtomForm
+1. [AtomForm](Form/README.md)
     * Field grouping
     * Field search for large forms
     * Simple Validations
     * Custom Validations
-    * Third party control validations
+    * [Third party control validations](FormValidations/README.md)
     * Templates
 
-2. AtomChooser
+2. [AtomChooser](Chooser/README.md)
     * Multiple Value Selector
     * Key,Value pair 
     * ValuePath
     * Support for Popup view
     * Inbuilt search
 
-4. AtomGridView
+4. [AtomGridView](GridView/README.md)
     * Grid view with header support
 
-5. AtomToggleButtonBar
+5. [AtomToggleButtonBar](ToggleButtonBar/README.md)
     * Simple horizontal toggle button bar
 
-6. AtomConfirmButton
+6. [AtomConfirmButton](ConfirmButton/README.md)
     * Confirm alert
 
-7. AtomImageCropper
+7. [AtomImageCropper](ImageCropper/README.md)
     * Simple pinch and zoom image cropper (for both iOS and Android)
 
-8. AtomListView
+8. [AtomListView](ListView/README.md)
     * Multiple Item selector (check box selector)
 
-9. AtomCalendar
+9. [AtomCalendar](Calendar/README.md)
 
-10. AtomDatePicker
+10. [AtomDatePicker](DatePicker/README.md)
 
-11. AtomImage
+11. [AtomImage](Image/README.md)
     * Ability to display progress while loading image
     * Ability to load images from embedded DLL resources via `app-res://` and `res://AssemblyName/ResourceName` format
+12. [ToolBarItems](ToolBar/README.md)
+    * AtomPopupToolbarItem
+    * AtomToolbarItem
+
 
 # Simple MVVM Support    
 

@@ -3,23 +3,20 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:ns="clr-namespace:NeuroSpeech.UIAtoms.Controls;assembly=NeuroSpeech.UIAtoms"
              x:Class="Chooser.Views.ChooserPage">
-    <Grid>
+    <Grid Padding="10">
         <ns:AtomForm>
             <ns:AtomFieldGroup>
-                
-                
                 <ns:AtomChooser
                     ns:AtomForm.Label="Youtube Video:"
                     ItemsSource="{Binding Videos}"
                     LabelPath="Title"
                     ValuePath="ID"
-                    Value="{Binding SelectedVideoID, Mode=TwoWay}"
-                    />
+                    RowHeight="60"
+                    Value="{Binding SelectedVideoID, Mode=TwoWay}"/>
 
                 <Label
                     ns:AtomForm.Label="Selected Video ID:"
-                    Text="{Binding SelectedVideoID}"
-                    />
+                    Text="{Binding SelectedVideoID}"/>
             </ns:AtomFieldGroup>
         </ns:AtomForm>
     </Grid>

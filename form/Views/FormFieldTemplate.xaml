@@ -6,7 +6,7 @@
              BackgroundColor="Black"
              Title="Form Template">
     
-    <ns:AtomForm>
+    <ns:AtomForm Padding="10">
         <ns:AtomForm.FieldStyle>
             <ControlTemplate>
                 
@@ -68,7 +68,7 @@
             </ns:AtomTextBox>
 
             <ns:AtomTextBox
-                    ns:AtomForm.IsRequired="true"
+                        ns:AtomForm.IsRequired="true"
                         Placeholder="Password"
                         IsPassword="True"
                         PlaceholderColor="White"

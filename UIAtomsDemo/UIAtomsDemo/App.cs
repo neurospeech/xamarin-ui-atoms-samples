@@ -44,13 +44,17 @@ namespace UIAtomsDemo
                 }
             };
 
-            Device.BeginInvokeOnMainThread(async () =>
+            //Device.BeginInvokeOnMainThread(async () =>
+            //{
+            //    await UIAtomsApplication.Instance.InitAsync(new UIAtomsConfig());
+            //    LoadMainPage();
+            //});
+
+            Device.BeginInvokeOnMainThread( () =>
             {
-                await UIAtomsApplication.Instance.InitAsync(new UIAtomsConfig());
                 LoadMainPage();
             });
 
-            
         }
 
         private void LoadMainPage()
@@ -84,7 +88,7 @@ namespace UIAtomsDemo
             menuService.Add<ImageFromRes>("Image from Assembly Resource", "Image");
             menuService.Add<ImageFromAppRes>("Image from Application Resource", "Image");
             menuService.Add<ImageCropperPage>("Image Cropper", "Image");
-            menuService.Add<ImageFromWeb>("Image from Web", "Image");
+            //menuService.Add<ImageFromWeb>("Image from Web", "Image");
 
             menuService.Add<ToolbarItemVisibility>("Toolbar Visibility", "Toolbar");
             menuService.Add<ToolbarItemPopup>("Toolbar Popup", "Toolbar");

@@ -8,8 +8,7 @@
 
     <ns:AtomForm HideSingleGroup="False">
         <ns:AtomFieldGroup Category="Custom Validation">
-            
-            
+            <StackLayout Padding="15">
             <ns:AtomDatePicker 
                 ns:AtomForm.Label="Birth Date"
                 ns:AtomForm.IsRequired="True">
@@ -17,8 +16,8 @@
                     <nsv:AtomPropertyValidator Property="Value" ValidationRule="{local:CustomDateValidationRule}"/>
                 </ns:AtomForm.Validator>
             </ns:AtomDatePicker>
-
             <ns:AtomSubmitButton Text="Submit"/>
+            </StackLayout>
         </ns:AtomFieldGroup>
     </ns:AtomForm>
 </ContentPage>

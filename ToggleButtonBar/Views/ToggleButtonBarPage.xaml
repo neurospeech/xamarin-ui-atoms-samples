@@ -3,20 +3,18 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:ns="clr-namespace:NeuroSpeech.UIAtoms.Controls;assembly=NeuroSpeech.UIAtoms"
              x:Class="ToggleButtonBar.Views.ToggleButtonBarPage">
-    <ns:AtomForm>
+    <ns:AtomForm Padding="10">
 
         <ns:AtomFieldGroup>
     
         <ns:AtomToggleButtonBar
             ItemsSource="{Binding Colors}"
             LabelPath="Label"
-            SelectedItem="{Binding SelectedColor, Mode=TwoWay}"
-            />
+            SelectedItem="{Binding SelectedColor, Mode=TwoWay}"/>
 
         <Label
             ns:AtomForm.Label="Selected color"
-            Text="{Binding SelectedColor.Label}"
-            />
+            Text="{Binding SelectedColor.Label}"/>
         </ns:AtomFieldGroup>
     </ns:AtomForm>
 </ContentPage>

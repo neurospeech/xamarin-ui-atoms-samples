@@ -21,9 +21,10 @@
         </ns:AtomPopupToolbarItem>
     </ContentPage.ToolbarItems>
     
-    <Grid>
-        <Label
-            Text="Click on option to open popup"
-            />
-    </Grid>
+    <StackLayout Padding="10">
+        <Label Text="Click on SEARCH to open popup"
+               FontSize="14"
+               TextColor="Blue"
+               HorizontalOptions="CenterAndExpand"/>
+    </StackLayout>
 </ContentPage>
