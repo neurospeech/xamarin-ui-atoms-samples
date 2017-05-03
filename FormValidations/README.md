@@ -2,7 +2,7 @@
 It simply validates the third party control in the form.
 
 ## Screenshot
-![ThirdPartyValidator1](Images/ThirdPartyValidator1.png)  ![ThirdPartyValidator2](Images/ThirdPartyValidator2.png)  ![ThirdPartyValidator3](Images/ThirdPartyValidator3.png)
+<img src="Images/ThirdPartyValidator1.png" width="250" height="425">  <img src="Images/ThirdPartyValidator2.png" width="250" height="425">  <img src="Images/ThirdPartyValidator3.png" width="250" height="425">
 
 ## Usage
 

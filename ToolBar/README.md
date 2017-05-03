@@ -2,7 +2,7 @@
 AtomPopupToolbarItem when clicked it opens up in Popup view.
 
 ## Screenshot
-![ToolbarPop-up1](Images/ToolbarPop-up1.png)  ![ToolbarPop-up2](Images/ToolbarPop-up2.png)
+<img src="Images/ToolbarPop-up1.png" width="250" height="425">  <img src="Images/ToolbarPop-up2.png" width="250" height="425">
 
 ## Usage
 

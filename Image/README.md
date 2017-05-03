@@ -2,9 +2,10 @@
 AtomImage is a control that displays Images for Xamarin.Forms projects.
 
 ## Screenshot
-![ImageFromWeb-1](Images/ImageFromWeb-1.png)  ![ImageFromWeb-2](Images/ImageFromWeb-2.png)
+<img src="Images/ImageFromWeb-1.png" width="250" height="425">  <img src="Images/ImageFromWeb-2.png" width="250" height="425">
 
-![ImageFromAssemblyResource](Images/ImageFromAssemblyResource.png)  ![ImageFromApplicationResource](Images/ImageFromApplicationResource.png)
+
+<img src="Images/ImageFromAssemblyResource.png" width="250" height="425">  <img src="Images/ImageFromApplicationResource.png" width="250" height="425">
 
 ## Features
  * Ability to display progress while loading image.

@@ -2,7 +2,7 @@
 AtomImageCropper is a useful image cropping control for Xamarin.Forms projects.
 
 ## Screenshot
-![Image-Cropper-1](Images/Image-Cropper-1.png)  ![Image-Cropper-2](Images/Image-Cropper-2.png)
+<img src="Images/Image-Cropper-1.png" width="250" height="425">  <img src="Images/Image-Cropper-2.png" width="250" height="425">
 
 ## Features
  * Zoom In and Out feature

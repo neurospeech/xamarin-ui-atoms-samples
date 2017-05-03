@@ -2,9 +2,10 @@
 AtomListView is a control that displays lists of data, especially long lists that require scrolling. 
 
 ## Screenshot
-![ListView-1](Images/ListView-1.png)  ![ListView-2](Images/ListView-2.png)
+<img src="Images/ListView-1.png" width="250" height="425">  <img src="Images/ListView-2.png" width="250" height="425">
 
-![ListView-MultipleSelection-1](Images/ListView-MultipleSelection-1.png)  ![ListView-MultipleSelection-2](Images/ListView-MultipleSelection-2.png)
+
+<img src="Images/ListView-MultipleSelection-1.png" width="250" height="425">  <img src="Images/ListView-MultipleSelection-2.png" width="250" height="425">
 
 ## Features
   * AtomListView supports both single and multiple selection with `CheckBox`.
