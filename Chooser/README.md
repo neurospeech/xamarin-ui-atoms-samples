@@ -16,3 +16,4 @@ AtomChooser is a control for selecting a text item from a list of data.
   * Contains support for Popup view.
   * Fast loading and smooth scrolling experience even for large data sets.
   * In AtomChooser `DataTemplate` can contain any `View` based items like `Button`, `Grid`, `Label`, everything except `Cell`.
+  * Automation ID for Chooser CheckBox - "ListViewCheckBox", Ok Button - "Chooser_OkButton", Cancel Button - "Chooser_CancelButton"
