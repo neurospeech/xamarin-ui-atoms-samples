@@ -2,7 +2,7 @@
 AtomPopupToolbarItem when clicked it opens up in Popup view.
 
 ## Screenshot
-![ToolbarPop-up1](Images/ToolbarPop-up1.png){:height="300px" width="250px"}  ![ToolbarPop-up2](Images/ToolbarPop-up2.png){:height="300px" width="250px"}
+<img src="Images/ToolbarPop-up1.png" width="250" height="425">  <img src="Images/ToolbarPop-up2.png" width="250" height="425">
 
 ## Usage
 
@@ -37,7 +37,7 @@ Here is a sample:
 AtomToolbarItem is same as ToolbarItems in Xamarin.Forms project. Items visibility can be handle by other controls also.
 
 ## Screenshot
-![ToolbarVisibility1](Images/ToolbarVisibility1.png){:height="300px" width="250px"}  ![ToolbarVisibility2](Images/ToolbarVisibility2.png){:height="300px" width="250px"}
+<img src="Images/ToolbarVisibility1.png" width="250" height="425">  <img src="Images/ToolbarVisibility2.png" width="250" height="425">
 
 ## Usage
 

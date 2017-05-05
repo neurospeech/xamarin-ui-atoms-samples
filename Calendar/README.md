@@ -3,9 +3,13 @@
 A Simple Calendar control for your Xamarin.Forms projects.
 
 ## Screenshot
-![CalendarSelectedDate](Images/Calendar-SelectedDate.png){:height="300px" width="250px"}  
-![Calendar-TapCommand-1](Images/Calendar-TapCommand-1.png){:height="300px" width="250px"}  ![Calendar-TapCommand-2](Images/Calendar-TapCommand-2.png){:height="300px" width="250px"}  
-![Calendar-ItemTemplate-1](Images/Calendar-ItemTemplate-1.png){:height="300px" width="250px"}  ![Calendar-ItemTemplate-2](Images/Calendar-ItemTemplate-2.png){:height="300px" width="250px"}
+<img src="Images/Calendar-SelectedDate.png" width="250" height="425"> 
+
+ 
+<img src="Images/Calendar-TapCommand-1.png" width="250" height="425">  <img src="Images/Calendar-TapCommand-2.png" width="250" height="425">
+
+  
+<img src="Images/Calendar-ItemTemplate-1.png" width="250" height="425">  <img src="Images/Calendar-ItemTemplate-2.png" width="250" height="425">
 
 ## Features
   * Easily bind selected Date to other controls.
